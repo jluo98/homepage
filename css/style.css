@@ -150,7 +150,7 @@ a {
 	background-image: url(../icon/email.svg), none;
 }
 
-@media only screen and (max-width: 460px) {
+@media only screen and (max-width: 500px) {
 	.contact {
 		margin: 0 2em;
 	}
