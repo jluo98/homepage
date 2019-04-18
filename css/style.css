@@ -1,0 +1,155 @@
+body {
+	height: 100vh;
+	font-family: muli, sans-serif;
+	font-weight: 400;
+	margin: 0;
+	background-image: url(../img/background.jpg);
+	background-repeat: no-repeat;
+	background-attachment:fixed;
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	display: grid;
+	overflow: hidden;
+	align-items: center;
+	justify-content: center;
+}
+
+h1 {
+	font-family: proxima-nova, sans-serif;
+	font-weight: 700;
+}
+
+h2 {
+	font-family: proxima-nova, sans-serif;
+	font-weight: 700;
+}
+
+hr {
+	display: block;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: inset;
+	border-width: 1px;
+	border-color: rgba(255, 255, 255, 0.15);
+}
+
+a {
+	text-decoration: none;
+	overflow: hidden;
+}
+
+.namecard:before {
+	content: "";
+	position: absolute;
+	background: inherit;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	filter: blur(15px);
+	margin: -20px;
+	z-index: -1;
+}
+
+.namecard {
+	position: relative;
+	width: 550px;
+	margin-left: auto;
+	margin-right: auto;
+	background: inherit;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.8);	
+	border-radius: 5px;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.cardContent {
+	padding-top: 45px;
+	padding-bottom: 45px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.avatar {
+	margin: 0 auto;
+	background-image: url(../img/avatar.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border-radius: 50%;
+	box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+	width: 150px;
+	height: 150px;
+}
+
+.namecard h1 {
+	text-align: center;
+	text-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+	color: white;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.namecard p {
+	font-size: 14pt;
+	text-align: center;
+	text-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+	color: white;
+	line-height: 2em;
+	margin: 0;
+	padding-top: 5px;
+}
+
+.contactBar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.contact {
+	margin: 0 1em;
+	background-color: #000;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 50%;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	filter: invert(0);
+	transition: filter 0.2s linear;
+}
+
+.contact:hover {
+	filter: invert(1);
+}
+
+#vimeo {
+	background-image: url(../icon/vimeo.svg), none;
+}
+
+#github {
+	background-image: url(../icon/github.svg), none;
+}
+
+#instagram {
+	background-image: url(../icon/instagram.svg), none;
+}
+
+#linkedin {
+	background-image: url(../icon/linkedin.svg), none;
+}
+
+#email {
+	background-image: url(../icon/email.svg), none;
+}
+
+@media only screen and (max-width: 620px) {
+	.namecard {
+		width: 90vw;
+	}
+}
