@@ -17,20 +17,15 @@ body {
 	justify-content: center;
 }
 
-h1 {
-	font-family: proxima-nova, sans-serif;
-	font-weight: 700;
-}
-
-h2 {
+h1 h2 h3 h4 h5 h6 {
 	font-family: proxima-nova, sans-serif;
 	font-weight: 700;
 }
 
 hr {
 	display: block;
-	margin-top: 2em;
-	margin-bottom: 2em;
+	margin-top: 0;
+	margin-bottom: 0;
 	margin-left: auto;
 	margin-right: auto;
 	border-style: inset;
@@ -103,6 +98,30 @@ a {
 	line-height: 2em;
 	margin: 0;
 	padding-top: 5px;
+	padding-bottom: 45px;
+}
+
+.portfolioLink {
+	margin: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	transition: background-color 0.2s linear;
+}
+
+.portfolioLink:hover {
+	background-color: #FFF;
+}
+
+.portfolioLink h3 {
+	color: #FFF;
+	text-align: center;
+	text-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+	margin: 0;
+	transition: color 0.2s linear;
+}
+
+.portfolioLink:hover h3 {
+	color: #000;
 }
 
 .contactBar {
@@ -111,6 +130,7 @@ a {
 	align-items: center;
 	align-content: center;
 	flex-wrap: wrap;
+	padding-top: 45px;
 }
 
 .contact {
