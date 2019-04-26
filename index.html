@@ -14,10 +14,10 @@
 	<meta property="og:url" content="https://jasonluo.me/"/>
 	<meta property="og:image" content="https://jasonluo.me/img/background.jpg"/>
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://use.typekit.net/iih5khf.css">
-    <link rel="stylesheet" href="https://use.typekit.net/aaa3gkz.css">
-    <link rel="icon" type="image/png" href="favicon.png" />
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://use.typekit.net/iih5khf.css">
+	<link rel="stylesheet" href="https://use.typekit.net/aaa3gkz.css">
+	<link rel="icon" type="image/png" href="favicon.png" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-66519423-12"></script>
@@ -30,24 +30,34 @@
 	</script>
 </head>
 <body>
+	<div class="backgroundVideo">
+		<video id="grainVideo" oncontextmenu="return false;" poster="vid/grain-cover.png" preload="auto" autoplay muted loop playsinline>
+			<source src="vid/grain.mp4" type="video/mp4">
+		</video>
+		<video id="snippetsVideo" oncontextmenu="return false;" poster="vid/snippets-cover.png" preload="auto" autoplay muted loop playsinline onload="switchVideo()">
+			<source src="vid/snippets.mp4" type="video/mp4">
+		</video>
+	</div>
 	<div class="homeCard">
 		<div class="namecard">
 			<div class="avatar">
 				<img src="img/avatar.jpg">
 			</div>
 			<div class="cardContent">
-				<h1>JASON LUO</h1>
-				<p>Filmmaker · Cinematographer<br>Developer · New Media Artist</p>
+				<h1>Jason Luo</h1>
+				<p>Filmmaker · Cinematographer<br>New Media Artist</p>
 			</div>
-			</div>
-			<a href="portfolio.html"><div class="portfolioLink"><h3>PORTFOLIO</h3></div></a>
-			<div class="contactBar">
-				<a href="https://vimeo.com/jasonluo" target="_blank"><div class="contact" id="vimeo"></div></a>
-				<a href="https://github.com/Steve-luo" target="_blank"><div class="contact" id="github"></div></a>
-				<a href="https://www.instooltipram.com/jasonluo1998" target="_blank"><div class="contact" id="instagram"></div></a>
-				<a href="https://www.linkedin.com/in/jason-luo-41b583116" target="_blank"><div class="contact" id="linkedin"></div></a>
-				<a href="mailto:&#106;&#108;&#64;&#106;&#97;&#115;&#111;&#110;&#108;&#117;&#111;&#46;&#109;&#101;" target="_blank"><div class="contact" id="email"></div></a>
-			</div>
+		</div>
+		<a href="portfolio.html"><div class="portfolioLink"><h3>PORTFOLIO</h3></div></a>
+		<div class="contactBar">
+			<a href="https://vimeo.com/jasonluo" target="_blank"><div class="contact" id="vimeo"></div></a>
+			<a href="https://github.com/Steve-luo" target="_blank"><div class="contact" id="github"></div></a>
+			<a href="https://www.instagram.com/jasonluo1998" target="_blank"><div class="contact" id="instagram"></div></a>
+			<a href="https://www.linkedin.com/in/jason-luo-41b583116" target="_blank"><div class="contact" id="linkedin"></div></a>
+			<a href="mailto:&#106;&#108;&#64;&#106;&#97;&#115;&#111;&#110;&#108;&#117;&#111;&#46;&#109;&#101;" target="_blank"><div class="contact" id="email"></div></a>
+		</div>
 	</div>
+
+	<script type="text/javascript" src="js/loadvideo.js"></script>
 </body>
 </html>

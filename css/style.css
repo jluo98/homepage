@@ -35,13 +35,40 @@ a {
 	overflow: hidden;
 }
 
+.backgroundVideo {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%; 
+	overflow: hidden;
+}
+.backgroundVideo video {
+	position: absolute;
+    left: 50%; /* % of surrounding element */
+    top: 50%;
+    transform: translate(-50%, -50%); /* % of current element */
+    height: 100%;
+    width: 177.77777778vh; /* 100 * 16 / 9 */
+    min-width: 100%;
+    min-height: 56.25vw; /* 100 * 9 / 16 */
+}
+
+#grainVideo {
+	display: block;
+}
+
+#snippetsVideo {
+	display: none;
+}
+
 .homeCard {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 90%;
-	max-width: 550px;
+	max-width: 450px;
 	text-align: center;
 	overflow: hidden;
 }
@@ -50,13 +77,9 @@ a {
 	justify-content: center;
 	align-items: center;
 	font-size: 0;
-	margin-top: 15px;
-	margin-bottom: 15px;
+	margin: 15px auto;
 	padding: 25px;
-	border-style: solid;
-	border-color: #000;
-	border-width: 25px;
-	background-color: #FFF;
+	background-color: #000;
 }
 
 .avatar {
@@ -85,7 +108,7 @@ a {
 
 .namecard h1 {
 	text-align: left;
-	color: #000;
+	color: #FFF;
 	font-size: 20pt;
 	margin: 0;
 	padding-bottom: 0.2em;
@@ -94,7 +117,7 @@ a {
 .namecard p {
 	font-size: 12pt;
 	text-align: left;
-	color: #000;
+	color: #FFF;
 	line-height: 1.5em;
 	margin: 0;
 	padding: 0;
@@ -114,6 +137,7 @@ a {
 }
 
 .portfolioLink h3 {
+	font-size: 14pt;
 	color: #FFF;
 	text-align: center;
 	margin: 0;
@@ -134,14 +158,21 @@ a {
 	margin-bottom: 15px;
 }
 
-.contact {
+.contactBar a {
+	display: inline-block;
+	overflow: hidden;
 	margin: 0 1em;
+	width: 50px;
+	height: 50px;
+}
+
+.contact {
 	background-color: #000;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 50%;
-	width: 50px;
-	height: 50px;
+	width: 100%;
+	height: 100%;
 	filter: invert(0);
 	transition: filter 0.2s linear;
 }
@@ -171,6 +202,10 @@ a {
 }
 
 @media only screen and (max-width: 520px) {
+	.namecard {
+		max-width: 280px;
+	}
+
 	.avatar {
 		display: block;
 		width: 100%;
@@ -183,19 +218,69 @@ a {
 		display: block;
 		vertical-align: middle;
 		width: 100%;
+		width: 100%;
 		padding: 0;
 	}
 
 	.namecard h1 {
+		font-size: 18pt;
 		text-align: center;
 		margin: 0;
 		padding-top: 0.5em;
 	}
 
 	.namecard p {
+		font-size: 10pt;
 		text-align: center;
+	}
+
+	.portfolioLink h3 {
+		font-size: 12pt;
+	}
+
+	.contactBar a {
+		margin: 0.2em 0.5em;
 	}
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 370px) {
+	.contactBar a {
+		margin: 0.2em 0.2em;
+	}
+}
+
+@media only screen and (max-width: 310px) {
+	.contactBar a {
+		margin: 0.2em 0.8em;
+	}
+}
+
+@media only screen and (max-height: 400px) {
+	.namecard {
+		margin-top: 5px;
+		margin-bottom: 5px;
+		padding: 10px;
+	}
+
+	.namecard h1 {
+		font-size: 18pt;
+	}
+
+	.namecard p {
+		font-size: 10pt;
+	}
+
+	.portfolioLink {
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+
+	.portfolioLink h3 {
+		font-size: 12pt;
+	}
+
+	.contactBar {
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
 }
