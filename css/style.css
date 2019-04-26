@@ -92,6 +92,7 @@ a {
 }
 
 .avatar img {
+	width: 100%;
 	max-width: 135px;
 	border-style: solid;
 	border-color: #000;
@@ -123,34 +124,51 @@ a {
 	padding: 0;
 }
 
-.portfolioLink {
-	display: inline-block;
-	background-color: #000;
+.homeNavBar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	flex-wrap: nowrap;
 	margin-top: 15px;
 	margin-bottom: 15px;
-	padding: 15px;
+}
+
+.homeNavBar a {
+	display: inline-block;
+	overflow: hidden;
+	margin: 0;
+	width: 32%;
+}
+
+.homeNav {
+	height: 100%;
+	background-color: #000;
 	transition: background-color 0.2s linear;
 }
 
-.portfolioLink:hover {
+.homeNav:hover {
 	background-color: #FFF;
 }
 
-.portfolioLink h3 {
+.homeNav span {
+	font-family: proxima-nova, sans-serif;
 	font-size: 14pt;
+	font-weight: 700;
 	color: #FFF;
 	text-align: center;
+	line-height: 50px;
 	margin: 0;
 	transition: color 0.2s linear;
 }
 
-.portfolioLink:hover h3 {
+.homeNav:hover span {
 	color: #000;
 }
 
 .contactBar {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 	align-content: center;
 	flex-wrap: wrap;
@@ -161,7 +179,7 @@ a {
 .contactBar a {
 	display: inline-block;
 	overflow: hidden;
-	margin: 0 1em;
+	margin: 0;
 	width: 50px;
 	height: 50px;
 }
@@ -202,8 +220,8 @@ a {
 }
 
 @media only screen and (max-width: 520px) {
-	.namecard {
-		max-width: 280px;
+	.homeCard {
+		max-width: 288px;
 	}
 
 	.avatar {
@@ -234,24 +252,28 @@ a {
 		text-align: center;
 	}
 
-	.portfolioLink h3 {
-		font-size: 12pt;
-	}
-
-	.contactBar a {
-		margin: 0.2em 0.5em;
+	.homeNav span {
+		font-size: 10pt;
 	}
 }
 
-@media only screen and (max-width: 370px) {
-	.contactBar a {
-		margin: 0.2em 0.2em;
+@media only screen and (max-width: 319px) {
+	.contactBar {
+		justify-content: center;
 	}
-}
 
-@media only screen and (max-width: 310px) {
 	.contactBar a {
 		margin: 0.2em 0.8em;
+	}
+}
+
+@media only screen and (max-width: 252px) {
+	.homeNav {
+		height: 50px;
+	}
+
+	.homeNav span {
+		line-height: 25px;
 	}
 }
 
