@@ -1,23 +1,20 @@
 body {
 	height: 100vh;
-	font-family: muli, sans-serif;
+	font-family: myriad-pro, sans-serif;
 	font-weight: 400;
 	margin: 0;
-	background-image: url(../img/background.jpg);
+	/*background-image: url(../img/background.jpg);
 	background-repeat: no-repeat;
 	background-attachment:fixed;
 	background-position: center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: cover;
-	display: grid;
+	background-size: cover;*/
 	overflow: hidden;
-	align-items: center;
-	justify-content: center;
 }
 
-h1 h2 h3 h4 h5 h6 {
+h1 {
 	font-family: proxima-nova, sans-serif;
 	font-weight: 700;
 }
@@ -38,73 +35,77 @@ a {
 	overflow: hidden;
 }
 
-.namecard:before {
-	content: "";
+.homeCard {
 	position: absolute;
-	background: inherit;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	filter: blur(15px);
-	margin: -20px;
-	z-index: -1;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 90%;
+	max-width: 550px;
+	text-align: center;
+	overflow: hidden;
 }
 
 .namecard {
-	position: relative;
-	width: 90vw;
-	max-width: 550px;
-	margin-left: auto;
-	margin-right: auto;
-	background: inherit;
-	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.8);	
-	border-radius: 5px;
-	overflow: hidden;
-	z-index: 1;
-}
-
-.cardContent {
-	padding-top: 45px;
-	padding-bottom: 45px;
-	background-color: rgba(0, 0, 0, 0.5);
+	justify-content: center;
+	align-items: center;
+	font-size: 0;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 25px;
+	border-style: solid;
+	border-color: #000;
+	border-width: 25px;
+	background-color: #FFF;
 }
 
 .avatar {
-	margin: 0 auto;
-	background-image: url(../img/avatar.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
+	display: inline-block;
+	vertical-align: middle;
+	width: 41%;
+	text-align: right;
+	margin: 0;
+	padding-right: 2%;
+}
+
+.avatar img {
+	max-width: 135px;
+	border-style: solid;
+	border-color: #000;
+	border-width: 10px;
 	border-radius: 50%;
-	box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
-	width: 150px;
-	height: 150px;
+}
+
+.cardContent {
+	display: inline-block;
+	vertical-align: middle;
+	width: 55%;
+	padding-left: 2%;
 }
 
 .namecard h1 {
-	text-align: center;
-	text-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-	color: white;
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
+	text-align: left;
+	color: #000;
+	font-size: 20pt;
+	margin: 0;
+	padding-bottom: 0.2em;
 }
 
 .namecard p {
-	font-size: 14pt;
-	text-align: center;
-	text-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
-	color: white;
-	line-height: 2em;
+	font-size: 12pt;
+	text-align: left;
+	color: #000;
+	line-height: 1.5em;
 	margin: 0;
-	padding-top: 5px;
-	padding-bottom: 45px;
+	padding: 0;
 }
 
 .portfolioLink {
-	margin: 0;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	display: inline-block;
+	background-color: #000;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 15px;
 	transition: background-color 0.2s linear;
 }
 
@@ -115,7 +116,6 @@ a {
 .portfolioLink h3 {
 	color: #FFF;
 	text-align: center;
-	text-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
 	margin: 0;
 	transition: color 0.2s linear;
 }
@@ -130,7 +130,8 @@ a {
 	align-items: center;
 	align-content: center;
 	flex-wrap: wrap;
-	padding-top: 45px;
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
 
 .contact {
@@ -139,7 +140,6 @@ a {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 50%;
-	border-radius: 50%;
 	width: 50px;
 	height: 50px;
 	filter: invert(0);
@@ -170,14 +170,32 @@ a {
 	background-image: url(../icon/email.svg), none;
 }
 
-@media only screen and (max-width: 500px) {
-	.contact {
-		margin: 0 2em;
+@media only screen and (max-width: 520px) {
+	.avatar {
+		display: block;
+		width: 100%;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+
+	.cardContent {
+		display: block;
+		vertical-align: middle;
+		width: 100%;
+		padding: 0;
+	}
+
+	.namecard h1 {
+		text-align: center;
+		margin: 0;
+		padding-top: 0.5em;
+	}
+
+	.namecard p {
+		text-align: center;
 	}
 }
 
 @media only screen and (max-width: 380px) {
-	.contact {
-		margin: 0 1.2em;
-	}
 }
