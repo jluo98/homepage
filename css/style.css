@@ -291,12 +291,12 @@ a {
 		font-size: 10pt;
 	}
 
-	.portfolioLink {
+	.homeNavBar {
 		margin-top: 5px;
 		margin-bottom: 5px;
 	}
 
-	.portfolioLink h3 {
+	.homeNav span {
 		font-size: 12pt;
 	}
 
