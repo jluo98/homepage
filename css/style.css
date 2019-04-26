@@ -10,7 +10,6 @@ body {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	overflow: hidden;
 }
 
 h1 {
@@ -41,6 +40,7 @@ a {
 	width: 100%;
 	height: 100%; 
 	overflow: hidden;
+	z-index: -1000;
 }
 .backgroundVideo video {
 	position: absolute;
@@ -51,6 +51,7 @@ a {
     width: 177.77777778vh; /* 100 * 16 / 9 */
     min-width: 100%;
     min-height: 56.25vw; /* 100 * 9 / 16 */
+    z-index: -1000;
 }
 
 #grainVideo {
@@ -150,7 +151,7 @@ a {
 	background-color: #FFF;
 }
 
-.homeNav span {
+.homeNav p {
 	font-family: proxima-nova, sans-serif;
 	font-size: 14pt;
 	font-weight: 700;
@@ -161,7 +162,7 @@ a {
 	transition: color 0.2s linear;
 }
 
-.homeNav:hover span {
+.homeNav:hover p {
 	color: #000;
 }
 
@@ -218,6 +219,149 @@ a {
 	background-image: url(../icon/email.svg), none;
 }
 
+.subNavBar {
+	display: flex;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+	flex-wrap: nowrap;
+	z-index: 1000;
+}
+
+.subNavBar a {
+	display: inline-block;
+	overflow: hidden;
+	margin: 0;
+	width: 25%;
+}
+
+.subNav {
+	height: 100%;
+	background-color: #000;
+	transition: background-color 0.2s linear;
+}
+
+.subNav:hover {
+	background-color: #FFF;
+}
+
+.subNav p {
+	font-family: proxima-nova, sans-serif;
+	font-size: 14pt;
+	font-weight: 700;
+	color: #FFF;
+	text-align: center;
+	line-height: 50px;
+	margin: 0;
+	transition: color 0.2s linear;
+}
+
+.subNav:hover p {
+	color: #000;
+}
+
+.subNavActive {
+	background-color: #FFF;
+	width: calc(100%/4);
+}
+
+.subNavActive p {
+	font-family: proxima-nova, sans-serif;
+	font-size: 14pt;
+	font-weight: 700;
+	color: #000;
+	text-align: center;
+	line-height: 50px;
+	margin: 0;
+}
+
+.navPadding {
+	width: 100%;
+	height: 50px;
+}
+
+.gridLayout {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	width: 100%;
+	max-width: 1200px;
+	margin: 45px auto;
+}
+
+.gridItem {
+	display: inline-block;
+	width: 48%;
+	margin: 0;
+}
+
+.gridContent {
+	background-color: #111;
+	padding: 4% 4% 5px 4%;
+	margin: 1.5% 0;
+	transition: background-color 0.2s linear;
+}
+
+.gridContent:hover {
+	background-color: #FFF;
+}
+
+.gridContent:hover h3 {
+	color: #000;
+}
+
+.gridContent:hover p {
+	color: #000;
+}
+
+.gridImg {
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 0;
+	margin: 0 auto;
+	padding-top: 50%;
+}
+
+.gridText h3 {
+	font-family: proxima-nova, sans-serif;
+	text-align: center;
+	font-size: 14pt;
+	color: #FFF;
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+	transition: color 0.2s linear;
+}
+
+.gridText p {
+	font-weight: 300;
+	text-align: center;
+	font-size: 12pt;
+	color: #FFF;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+	transition: color 0.2s linear;
+}
+
+@media only screen and (max-width: 720px) {
+	.gridText h3 {
+		font-size: 12pt;
+	}
+
+	.gridText p {
+		font-size: 10pt;
+	}
+}
+
 @media only screen and (max-width: 520px) {
 	.homeCard {
 		max-width: 288px;
@@ -251,8 +395,24 @@ a {
 		text-align: center;
 	}
 
-	.homeNav span {
+	.homeNav p {
 		font-size: 10pt;
+	}
+
+	.subNav p {
+		font-size: 10pt;
+	}
+
+	.subNavActive p {
+		font-size: 10pt;
+	}
+
+	.gridLayout {
+		justify-content: center;
+	}
+
+	.gridItem {
+		width: 90%;
 	}
 }
 
@@ -271,7 +431,7 @@ a {
 		height: 50px;
 	}
 
-	.homeNav span {
+	.homeNav p {
 		line-height: 25px;
 	}
 }
@@ -296,7 +456,7 @@ a {
 		margin-bottom: 5px;
 	}
 
-	.homeNav span {
+	.homeNav p {
 		font-size: 12pt;
 	}
 
