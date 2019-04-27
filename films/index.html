@@ -36,55 +36,47 @@
 		</video>
 	</div>
 	<div class="gridLayout noselect">
-		<div class="gridItem">
-			<a onclick="showItem('postcard-detail')" href="javascript:void(0);">
-				<div class="gridContent">
-					<div class="gridImg" style="background-image: url(img/postcard.png);"></div>
-					<div class="gridText">
-						<h3>Postcard</h3>
-						<p>2019</p>
-					</div>
+		<div class="gridItem" onclick="showItem('postcard-detail')">
+			<div class="gridContent">
+				<div class="gridImg" style="background-image: url(img/postcard.png);"></div>
+				<div class="gridText">
+					<h3>Postcard</h3>
+					<p>2019</p>
 				</div>
-			</a>
+			</div>
 		</div>
 		<div class="gridItem">
-			<a href="#">
-				<div class="gridContent">
-					<div class="gridImg" style="background-image: url(img/pegasus.png);"></div>
-					<div class="gridText">
-						<h3>Pegasus</h3>
-						<p>2018</p>
-					</div>
+			<div class="gridContent">
+				<div class="gridImg" style="background-image: url(img/pegasus.png);"></div>
+				<div class="gridText">
+					<h3>Pegasus</h3>
+					<p>2018</p>
 				</div>
-			</a>
+			</div>
 		</div>
 		<div class="gridItem">
-			<a href="#">
-				<div class="gridContent">
-					<div class="gridImg" style="background-image: url(img/i.png);"></div>
-					<div class="gridText">
-						<h3>i</h3>
-						<p>2017</p>
-					</div>
+			<div class="gridContent">
+				<div class="gridImg" style="background-image: url(img/i.png);"></div>
+				<div class="gridText">
+					<h3>i</h3>
+					<p>2017</p>
 				</div>
-			</a>
+			</div>
 		</div>
 		<div class="gridItem">
-			<a href="#">
-				<div class="gridContent">
-					<div class="gridImg" style="background-image: url(img/remembering.png);"></div>
-					<div class="gridText">
-						<h3>Remembering Our Days at Raffles</h3>
-						<p>2017</p>
-					</div>
+			<div class="gridContent">
+				<div class="gridImg" style="background-image: url(img/remembering.png);"></div>
+				<div class="gridText">
+					<h3>Remembering Our Days at Raffles</h3>
+					<p>2017</p>
 				</div>
-			</a>
+			</div>
 		</div>
 	</div>
 
-	<a onclick="hideItem('postcard-detail')" href="javascript:void(0);"><div class="dimmer" id="dimmer"></div></a>
+	<div class="dimmer" id="dimmer" onclick="hideItem('postcard-detail')"></div>
 	<div class="detailedPage" id="postcard-detail">
-		<a onclick="hideItem('postcard-detail')" href="javascript:void(0);"><div class="closeButton"></div></a>
+		<div class="closeButton" onclick="hideItem('postcard-detail')"></div>
 		<div class="detailedContent">
 			<h1>Postcard</h1>
 			<p>A 48-hour challenge short film. All production was completed within the 48-hour time frame. 

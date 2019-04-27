@@ -318,6 +318,7 @@ a {
 
 .gridContent:hover {
 	background-color: #FFF;
+	cursor: pointer;
 }
 
 .gridContent:hover h3 {
@@ -406,6 +407,10 @@ a {
 	height: 35px;
 	margin: 0;
 	z-index: 300;
+}
+
+.closeButton:hover {
+	cursor: pointer;
 }
 
 .detailedContent {
