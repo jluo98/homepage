@@ -37,7 +37,7 @@
 	</div>
 	<div class="gridLayout noselect">
 		<div class="gridItem">
-			<a href="#">
+			<a onclick="showItem('postcard-detail')" href="javascript:void(0);">
 				<div class="gridContent">
 					<div class="gridImg" style="background-image: url(img/postcard.png);"></div>
 					<div class="gridText">
@@ -82,6 +82,22 @@
 		</div>
 	</div>
 
+	<a onclick="hideItem('postcard-detail')" href="javascript:void(0);"><div class="dimmer" id="dimmer"></div></a>
+	<div class="detailedPage" id="postcard-detail">
+		<a onclick="hideItem('postcard-detail')" href="javascript:void(0);"><div class="closeButton"></div></a>
+		<div class="detailedContent">
+			<h1>Postcard</h1>
+			<p>A 48-hour challenge short film. All production was completed within the 48-hour time frame. 
+				<br><br>
+				Premiered at Gene Siskel Film Center. 
+				<br>
+				Awarded 2nd Place at the 48·24·12 Video Challenge of ArtBash, a School of the Art Institute of Chicago event.</p>
+			<div class="embededVideo">
+				<iframe src="https://player.vimeo.com/video/332103460" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+
 	<div class="navPadding"></div>
 	
 	<div class="subNavBar noselect">
@@ -90,6 +106,8 @@
 		<a href="../newmedia/"><div class="subNav"><p>NEW MEDIA</p></div></a>
 		<a href="../aboutme/"><div class="subNav"><p>ABOUT ME</p></div></a>
 	</div>
+
+	<script type="text/javascript" src="../js/detailpage.js"></script>
 
 	<div class="blackBlock" id="blackBlock"><div class="loader" id="loader"><div class="lds-grid"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div></div>
 	<script type="text/javascript" src="../js/loader.js"></script>
