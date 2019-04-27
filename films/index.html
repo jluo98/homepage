@@ -45,7 +45,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="gridItem">
+		<div class="gridItem" onclick="showItem('pegasus-detail')">
 			<div class="gridContent">
 				<div class="gridImg" style="background-image: url(img/pegasus.png);"></div>
 				<div class="gridText">
@@ -54,7 +54,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="gridItem">
+		<div class="gridItem" onclick="showItem('i-detail')">
 			<div class="gridContent">
 				<div class="gridImg" style="background-image: url(img/i.png);"></div>
 				<div class="gridText">
@@ -63,7 +63,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="gridItem">
+		<div class="gridItem" onclick="showItem('remembering-detail')">
 			<div class="gridContent">
 				<div class="gridImg" style="background-image: url(img/remembering.png);"></div>
 				<div class="gridText">
@@ -74,18 +74,54 @@
 		</div>
 	</div>
 
-	<div class="dimmer" id="dimmer" onclick="hideItem('postcard-detail')"></div>
+	<div class="dimmer" id="dimmer" onclick="closePage()"></div>
 	<div class="detailedPage" id="postcard-detail">
-		<div class="closeButton" onclick="hideItem('postcard-detail')"></div>
+		<div class="closeButton" onclick="closePage()"></div>
 		<div class="detailedContent">
 			<h1>Postcard</h1>
 			<p>A 48-hour challenge short film. All production was completed within the 48-hour time frame. 
 				<br><br>
-				Premiered at Gene Siskel Film Center. 
+				Premiered at the Gene Siskel Film Center. 
 				<br>
-				Awarded 2nd Place at the 48·24·12 Video Challenge of ArtBash, a School of the Art Institute of Chicago event.</p>
-			<div class="embededVideo">
+				Awarded 2nd Place at the 48·24·12 Video Challenge of ArtBash, a School of the Art Institute of Chicago event. </p>
+			<div class="embededVideo wideVideo">
 				<iframe src="https://player.vimeo.com/video/332103460" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+	<div class="detailedPage" id="pegasus-detail">
+		<div class="closeButton" onclick="closePage()"></div>
+		<div class="detailedContent">
+			<h1>Pegasus</h1>
+			<p>Was it real, or just a dream? 
+				<br><br>
+				A class project at the School of the Art Institute of Chicago. </p>
+			<div class="embededVideo wideVideo">
+				<iframe src="https://player.vimeo.com/video/332102743" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+	<div class="detailedPage" id="i-detail">
+		<div class="closeButton" onclick="closePage()"></div>
+		<div class="detailedContent">
+			<h1>i - a short film</h1>
+			<p>Diane finally has a friend, but something is not right. 
+				<br><br>
+				A thesis film produced by the Raffles Film Society. </p>
+			<div class="embededVideo standardVideo">
+				<iframe src="https://player.vimeo.com/video/240443207" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+	<div class="detailedPage" id="remembering-detail">
+		<div class="closeButton" onclick="closePage()"></div>
+		<div class="detailedContent">
+			<h1>Remembering Our Days at Raffles</h1>
+			<p>A farewell video for the graduating batch at the Raffles Institution Farewell Assembly 2016. 
+				<br><br>
+				A film produced by the Raffles Film Society. </p>
+			<div class="embededVideo standardVideo">
+				<iframe src="https://player.vimeo.com/video/242919085" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>

@@ -2,6 +2,7 @@ body {
 	font-family: myriad-pro, sans-serif;
 	font-weight: 400;
 	margin: 0;
+	background-color: #000;
 	background-image: url(../img/cover.jpg);
 	background-repeat: no-repeat;
 	background-attachment:fixed;
@@ -383,6 +384,7 @@ a {
 }
 
 .detailedPage {
+	display: none;
 	position: fixed;
 	top: 120vh;
 	left: 50%;
@@ -429,8 +431,16 @@ a {
 
 .embededVideo {
 	position: relative;
-	padding-top: 56.25%;
+	margin: 3em 0;
 	overflow: hidden;
+}
+
+.standardVideo {
+	padding-top: 56.25%;
+}
+
+.wideVideo {
+	padding-top: 42.55%;
 }
 
 .embededVideo iframe {
@@ -599,7 +609,7 @@ a {
 	}
 
 	.detailedContent h1 {
-		font-size: 32pt;
+		font-size: 28pt;
 	}
 
 	.detailedContent p {
