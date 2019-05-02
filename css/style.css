@@ -800,7 +800,7 @@ img {
 	}
 }
 
-@media only screen and (max-height: 400px) {
+@media only screen and (max-height: 450px) {
 	.namecard {
 		margin-top: 5px;
 		margin-bottom: 5px;
@@ -827,5 +827,9 @@ img {
 	.contactBar {
 		margin-top: 5px;
 		margin-bottom: 5px;
+	}
+
+	.aboutmeBox {
+		margin: 45px auto 0 auto;
 	}
 }
