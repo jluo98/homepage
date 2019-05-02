@@ -78,6 +78,7 @@ img {
 	overflow: hidden;
 	z-index: -1000;
 }
+
 .backgroundVideo video {
 	position: absolute;
     left: 50%; /* % of surrounding element */
