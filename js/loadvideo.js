@@ -6,12 +6,22 @@ function switchVideo() {
 	snippets.style.display='block';
 }
 
-var check = function() {
+function checkSnippets() {
 	if (snippets.readyState === 4) {
+		snippets.play();
 		switchVideo();
 	} else {
-		setTimeout(check, 100);
+		setTimeout(checkSnippets, 100);
 	}
 }
 
-check();
+var checkGrain = function() {
+	if (grain.readyState === 4) {
+		snippets.load();
+		checkSnippets();
+	} else {
+		setTimeout(checkGrain, 100);
+	}
+}
+
+checkGrain();

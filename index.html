@@ -32,20 +32,11 @@
 
 <body>
 	<div class="blackBlock" id="blackBlock"><div class="loader" id="loader"><div class="lds-grid"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div></div>
-	
-	<div class="backgroundVideo">
-		<video id="grainVideo" oncontextmenu="return false;" poster="img/cover.jpg" preload="auto" autoplay muted loop playsinline>
-			<source src="vid/grain.mp4" type="video/mp4">
-		</video>
-		<video id="snippetsVideo" oncontextmenu="return false;" poster="img/cover.jpg" preload="auto" autoplay muted loop playsinline onload="switchVideo()">
-			<source src="vid/snippets.mp4" type="video/mp4">
-		</video>
-	</div>
 
 	<div class="homeCard">
 		<div class="namecard">
 			<div class="avatar">
-				<img src="img/avatar.jpg">
+				<img src="img/avatar.jpg" id="avatar">
 			</div>
 			<div class="cardContent">
 				<h1>Jason Luo</h1>
@@ -66,7 +57,16 @@
 		</div>
 	</div>
 
-	<script type="text/javascript" src="js/loader.js"></script>
+	<div class="backgroundVideo">
+		<video id="grainVideo" oncontextmenu="return false;" preload="auto" autoplay muted loop playsinline>
+			<source src="vid/grain.mp4" type="video/mp4">
+		</video>
+		<video id="snippetsVideo" oncontextmenu="return false;" preload="none" muted loop playsinline>
+			<source src="vid/snippets.mp4" type="video/mp4">
+		</video>
+	</div>
+
+	<script type="text/javascript" src="js/index-loader.js"></script>
 	<script type="text/javascript" src="js/loadvideo.js"></script>
 </body>
 </html>

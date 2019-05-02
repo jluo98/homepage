@@ -1,5 +1,7 @@
 var loader = document.getElementById("loader");
 var blackBlock = document.getElementById("blackBlock");
+var grain = document.getElementById("grainVideo");
+var avatar = document.getElementById("avatar");
 
 function dimLoader() {
 	loader.style.opacity='0';
@@ -12,6 +14,12 @@ function hideLoader() {
 	blackBlock.style.display='none';
 }
 
-window.onload = function() {
-	setTimeout(dimLoader, 100);
+var indexcheck = function() {
+	if (grain.readyState === 4 && avatar.complete == true) {
+		dimLoader();
+	} else {
+		setTimeout(indexcheck, 100);
+	}
 }
+
+indexcheck();
