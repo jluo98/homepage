@@ -12,12 +12,6 @@ function hideLoader() {
 	blackBlock.style.display='none';
 }
 
-var check = function() {
-	if (document.readyState = "complete") {
-		dimLoader();
-	} else {
-		setTimeout(check, 100);
-	}
+window.onload = function() {
+	dimLoader();
 }
-
-check();
