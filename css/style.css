@@ -419,7 +419,8 @@ img {
 	height: 92vh;
 	max-width: 1000px;
 	background-color: #111;
-	overflow: auto;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
 	z-index: 1200;
 	transition: top 0.5s ease-in-out;
 }
