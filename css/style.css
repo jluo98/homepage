@@ -517,8 +517,8 @@ img {
 	font-size: 14pt;
 	font-weight: 700;
 	line-height: 45px;
-	color: #FFF;
 	text-align: center;
+	color: #FFF;
 	margin: 0;
 	transition: color 0.2s linear;
 }
@@ -527,7 +527,6 @@ img {
 	display: inline-block;
 	overflow: hidden;
 	margin: 0;
-	background-color: #000;
 	background-image: url(../icon/newtab.svg);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -535,6 +534,21 @@ img {
 	width: 12px;
 	height: 12px;
 	margin-left: 5px;
+}
+
+.githubIcon {
+	display: inline-block;
+	vertical-align: baseline;
+	transform: translateY(3px);
+	overflow: hidden;
+	margin: 0;
+	background-image: url(../icon/github.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
 }
 
 .loader {
@@ -703,6 +717,40 @@ img {
 
 	.detailedContent p {
 		font-size: 12pt;
+	}
+
+	.linkCube p {
+		font-size: 12pt;
+		line-height: 40px;
+	}
+
+	.newtabIcon {
+		width: 10px;
+		height: 10px;
+	}
+
+	.githubIcon {
+		transform: translateY(2px);
+		width: 16px;
+		height: 16px;
+	}
+}
+
+@media only screen and (max-width: 380px) {
+	.linkCube p {
+		font-size: 10pt;
+		line-height: 35px;
+	}
+
+	.newtabIcon {
+		width: 8px;
+		height: 8px;
+	}
+
+	.githubIcon {
+		transform: translateY(1px);
+		width: 14px;
+		height: 14px;
 	}
 }
 
