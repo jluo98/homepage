@@ -7,6 +7,7 @@ function dimLoader() {
 
 function hideLoader() {
 	blackBlock.style.display='none';
+	getQuery();
 }
 
 window.onload = function() {

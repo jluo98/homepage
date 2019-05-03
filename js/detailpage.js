@@ -46,6 +46,7 @@ function showItem(chosenShowItem) {
 	if (waitBool == false) {
 		waitBool = true;
 		item = chosenShowItem
+		addUrlParam();
 		openPage();
 		checkLoad();
 		setTimeout(getContent, 500);
@@ -72,6 +73,7 @@ function closePage() {
 	if (waitBool == false) {
 		waitBool = true;
 		page.style.top = '120vh';
+		removeUrlParam();
 		dimmerToggle();
 		setTimeout(hideElement, 500);
 		setTimeout(resetPage, 500);
@@ -128,5 +130,32 @@ function resetPage() {
 		linkText.innerHTML = "";
 		link.href = "";
 		sourceLink.href = "";
+	}
+}
+
+function addUrlParam() {
+	var param = item.replace("-detail", "");
+	history.pushState(item, item, "?show=" + param);
+}
+
+function removeUrlParam() {
+	history.pushState(null, null, ".");
+}
+
+function getQuery() {
+	function getUrlVars() {
+		var vars = {};
+		var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+			vars[key] = value;
+	    });
+		return vars;
+	}
+
+	var param = getUrlVars()["show"];
+
+	var field = 'show';
+	var url = window.location.href;
+	if (url.indexOf('?' + field + '=') != -1) {
+		showItem(param + "-detail");
 	}
 }
