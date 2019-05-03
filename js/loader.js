@@ -10,5 +10,5 @@ function hideLoader() {
 }
 
 window.onload = function() {
-	setTimeout(dimLoader, 100);
+	setTimeout(dimLoader, 300);
 }

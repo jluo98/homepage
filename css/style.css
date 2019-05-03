@@ -657,7 +657,7 @@ img {
 
 .aboutmeBox {
 	width: 90%;
-	max-width: 1000px;
+	max-width: 800px;
 	margin: 125px auto 0 auto;
 }
 
@@ -680,6 +680,19 @@ img {
 .aboutmeContent p {
 	font-weight: 300;
 	font-size: 14pt;
+}
+
+.aboutmeContent a {
+	font-weight: 400;
+	color: #FFF;
+	background-color: rgba(0, 0, 0, 0);
+	padding: 0 5px;
+	transition: color 0.2s linear, background-color 0.2s linear;
+}
+
+.aboutmeContent a:hover {
+	color: #000;
+	background-color: rgba(255, 255, 255, 1);
 }
 
 @media only screen and (max-width: 720px) {
