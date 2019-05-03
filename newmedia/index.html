@@ -81,66 +81,16 @@
 	</div>
 
 	<div class="dimmer" id="dimmer" onclick="closePage()"></div>
-	<div class="detailedPage" id="homepage-detail">
+	<div class="detailedPage" id="detailedPage">
+		<div class="divGrayBlock" id="divBlackBlock"><div class="loader" id="divLoader"><div class="lds-grid"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div></div>
 		<div class="closeButtonBox"><div class="closeButton" onclick="closePage()"></div></div>
 		<div class="detailedContent">
-			<h1>jasonluo.me</h1>
-			<p>A website dedicated to display my works in film and new media, coded from scratch. </p>
-			<img src="img/homepage-screenshot.jpg">
+			<h1 id="detailedContentTitle"></h1>
+			<p id="detailedContentText"></p>
+			<img id="detailedContentImage">
 			<div class="linkBox">
-				<a href="https://github.com/Steve-luo/homepage" target="_blank"><div class="linkCube"><div class="githubIcon"></div><p>Source</p><div class="newtabIcon"></div></div></a>
-			</div>
-		</div>
-	</div>
-	<div class="detailedPage" id="timemachine-detail">
-		<div class="closeButtonBox"><div class="closeButton" onclick="closePage()"></div></div>
-		<div class="detailedContent">
-			<h1>Time Machine</h1>
-			<p>This is a project responding to this social media era where everyone is using the same platform for communication. People are always staring at their digital devices, looking at the same websites, the same apps, yet the content is tailored to each individual user. 
-			<br>
-			This website synchronizes the screens across all devices visiting. But instead of targeted content, users are randomly assigned a video snippet of a childhood aniation show. The change happens at the same time for everyone. 
-			<br><br>
-			A Core Studio project at the School of the Art Institute of Chicago. </p>
-			<img src="img/timemachine-screenshot.jpg">
-			<div class="linkBox">
-				<a href="https://timemachine.jasonluo.me" target="_blank"><div class="linkCube"><p>timemachine.jasonluo.me</p><div class="newtabIcon"></div></div></a>
-				<a href="https://github.com/Steve-luo/timemachine" target="_blank"><div class="linkCube"><div class="githubIcon"></div><p>Source</p><div class="newtabIcon"></div></div></a>
-			</div>
-		</div>
-	</div>
-	<div class="detailedPage" id="blackmirror-detail">
-		<div class="closeButtonBox"><div class="closeButton" onclick="closePage()"></div></div>
-		<div class="detailedContent">
-			<h1>Black Mirror Club</h1>
-			<p>A fan page for the popular TV series Black Mirror. </p>
-			<img src="img/blackmirror-screenshot.jpg">
-			<div class="linkBox">
-				<a href="https://blackmirror.club" target="_blank"><div class="linkCube"><p>blackmirror.club</p><div class="newtabIcon"></div></div></a>
-				<a href="https://github.com/Steve-luo/blackmirrorclub" target="_blank"><div class="linkCube"><div class="githubIcon"></div><p>Source</p><div class="newtabIcon"></div></div></a>
-			</div>
-		</div>
-	</div>
-	<div class="detailedPage" id="ptb-detail">
-		<div class="closeButtonBox"><div class="closeButton" onclick="closePage()"></div></div>
-		<div class="detailedContent">
-			<h1>Push That Brick</h1>
-			<p>A simple javascript web game created using p5.js. </p>
-			<img src="img/ptb-screenshot.png">
-			<div class="linkBox">
-				<a href="https://ptb.jasonluo.me" target="_blank"><div class="linkCube"><p>ptb.jasonluo.me</p><div class="newtabIcon"></div></div></a>
-				<a href="https://github.com/Steve-luo/pushthatbrick" target="_blank"><div class="linkCube"><div class="githubIcon"></div><p>Source</p><div class="newtabIcon"></div></div></a>
-			</div>
-		</div>
-	</div>
-	<div class="detailedPage" id="mirrored-detail">
-		<div class="closeButtonBox"><div class="closeButton" onclick="closePage()"></div></div>
-		<div class="detailedContent">
-			<h1>Mirrored</h1>
-			<p>A simple text-based web game created using Twine. </p>
-			<img src="img/mirrored-screenshot.jpg">
-			<div class="linkBox">
-				<a href="https://mirrored.jasonluo.me" target="_blank"><div class="linkCube"><p>mirrored.jasonluo.me</p><div class="newtabIcon"></div></div></a>
-				<a href="https://github.com/Steve-luo/mirrored" target="_blank"><div class="linkCube"><div class="githubIcon"></div><p>Source</p><div class="newtabIcon"></div></div></a>
+				<a id="detailLink" target="_blank"><div class="linkCube"><p id="detailLinkText"></p><div class="newtabIcon"></div></div></a>
+				<a id="sourceLink" target="_blank"><div class="linkCube"><div class="githubIcon"></div><p>Source</p><div class="newtabIcon"></div></div></a>
 			</div>
 		</div>
 	</div>

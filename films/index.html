@@ -99,89 +99,14 @@
 	</div>
 
 	<div class="dimmer" id="dimmer" onclick="closePage()"></div>
-	<div class="detailedPage" id="i-detail">
+	<div class="detailedPage" id="detailedPage">
+		<div class="divGrayBlock" id="divBlackBlock"><div class="loader" id="divLoader"><div class="lds-grid"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div></div>
 		<div class="closeButtonBox"><div class="closeButton" onclick="closePage()"></div></div>
 		<div class="detailedContent">
-			<h1>i</h1>
-			<p>Diane finally has a friend, but something is not right. 
-				<br><br>
-				A thesis film produced by the Raffles Film Society. </p>
-			<div class="embededVideo standardVideo">
-				<iframe src="https://player.vimeo.com/video/240443207" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-	<div class="detailedPage" id="pegasus-detail">
-		<div class="closeButtonBox"><div class="closeButton" onclick="closePage()"></div></div>
-		<div class="detailedContent">
-			<h1>Pegasus</h1>
-			<p>Was it real, or just a dream? 
-				<br><br>
-				A class project at the School of the Art Institute of Chicago. </p>
-			<div class="embededVideo wideVideo">
-				<iframe src="https://player.vimeo.com/video/332102743" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-	<div class="detailedPage" id="postcard-detail">
-		<div class="closeButtonBox"><div class="closeButton" onclick="closePage()"></div></div>
-		<div class="detailedContent">
-			<h1>Postcard</h1>
-			<p>A 48-hour challenge short film. All production was completed within the 48-hour time frame. 
-				<br><br>
-				Premiered at the Gene Siskel Film Center. 
-				<br>
-				Awarded the 2nd place at the 48·24·12 Video Challenge of ArtBash, a School of the Art Institute of Chicago event. </p>
-			<div class="embededVideo wideVideo">
-				<iframe src="https://player.vimeo.com/video/332103460" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-	<div class="detailedPage" id="remembering-detail">
-		<div class="closeButtonBox"><div class="closeButton" onclick="closePage()"></div></div>
-		<div class="detailedContent">
-			<h1>Remembering Our Days at Raffles</h1>
-			<p>A farewell video for the graduating batch at the Raffles Institution Farewell Assembly 2016. 
-				<br><br>
-				A film produced by the Raffles Film Society. </p>
-			<div class="embededVideo standardVideo">
-				<iframe src="https://player.vimeo.com/video/242919085" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-	<div class="detailedPage" id="cldcs-detail">
-		<div class="closeButtonBox"><div class="closeButton" onclick="closePage()"></div></div>
-		<div class="detailedContent">
-			<h1>CLDCS Official Video</h1>
-			<p>The official video for the Chinese Language, Drama & Cultural Society at Raffles Institution. 
-				<br><br>
-				A film produced by the Raffles Film Society. </p>
-			<div class="embededVideo standardVideo">
-				<iframe src="https://player.vimeo.com/video/242921340" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-	<div class="detailedPage" id="how-detail">
-		<div class="closeButtonBox"><div class="closeButton" onclick="closePage()"></div></div>
-		<div class="detailedContent">
-			<h1>How to Make a Film - Harry Trotter and the Kidney Stone</h1>
-			<p>A parody about how to make a film. 
-				<br><br>
-				A film produced by the Raffles Film Society. </p>
-			<div class="embededVideo wideVideo">
-				<iframe src="https://player.vimeo.com/video/242918469" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-	<div class="detailedPage" id="friends-detail">
-		<div class="closeButtonBox"><div class="closeButton" onclick="closePage()"></div></div>
-		<div class="detailedContent">
-			<h1>Friends - Less Than Meets The Eye</h1>
-			<p>May and Phyo have been great friends, but their friends don't seem to agree. 
-				<br><br>
-				Awarded the 3rd place at Filmfeste, a Raffles Institution event. </p>
-			<div class="embededVideo standardVideo">
-				<iframe src="https://player.vimeo.com/video/242917469" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
+			<h1 id="detailedContentTitle"></h1>
+			<p id="detailedContentText"></p>
+			<div class="embededVideo" id="embededVideo">
+				<iframe id="embededElement" frameborder="0" allow="fullscreen" allowfullscreen></iframe>
 			</div>
 		</div>
 	</div>

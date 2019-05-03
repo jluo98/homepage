@@ -78,6 +78,18 @@ img {
 	transition: opacity 0.5s linear;
 }
 
+.divGrayBlock {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	width: 100%;
+	height: 200vh;
+	opacity: 1;
+	z-index: 1400;
+	transition: opacity 0.5s linear;
+}
+
 .lds-grid {
   display: inline-block;
   position: relative;
