@@ -768,7 +768,7 @@ img {
 	}
 
 	.githubIcon {
-		transform: translateY(2px);
+		transform: translateY(4px);
 		width: 16px;
 		height: 16px;
 	}
@@ -786,7 +786,7 @@ img {
 	}
 
 	.githubIcon {
-		transform: translateY(1px);
+		transform: translateY(2px);
 		width: 14px;
 		height: 14px;
 	}
