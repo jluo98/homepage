@@ -91,7 +91,7 @@ function checkLoad() {
 	if (window.location.href.indexOf("/films") != -1) {
 		var iframeDoc = embededVideo.contentDocument || embededVideo.contentWindow.document;
 		if (iframeDoc.readyState == 'complete') {
-			setTimeout(dimDivLoader, 500);
+			setTimeout(dimDivLoader, 1000);
 		} else {
 			setTimeout(checkLoad, 100);
 		}
