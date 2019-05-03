@@ -13,7 +13,7 @@ var linkText = document.getElementById("detailLinkText");
 var link = document.getElementById("detailLink");
 var sourceLink = document.getElementById("sourceLink");
 
-var item
+var item;
 
 function resetWait() {
 	waitBool = false;
@@ -45,7 +45,7 @@ function getContent() {
 function showItem(chosenShowItem) {
 	if (waitBool == false) {
 		waitBool = true;
-		item = chosenShowItem
+		item = chosenShowItem;
 		addUrlParam();
 		openPage();
 		checkLoad();
@@ -140,22 +140,4 @@ function addUrlParam() {
 
 function removeUrlParam() {
 	history.pushState(null, null, ".");
-}
-
-function getQuery() {
-	function getUrlVars() {
-		var vars = {};
-		var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
-			vars[key] = value;
-	    });
-		return vars;
-	}
-
-	var param = getUrlVars()["show"];
-
-	var field = 'show';
-	var url = window.location.href;
-	if (url.indexOf('?' + field + '=') != -1) {
-		showItem(param + "-detail");
-	}
 }
