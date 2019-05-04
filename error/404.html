@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>404 Not Found - Jason Luo</title>
+	
+	<meta charset="utf-8"/>
+	<meta name="author" content="Jason Luo">
+	<meta name="description" content="The page you're looking for does not exist. ">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+
+	<link rel="stylesheet" href="https://jasonluo.me/css/style.css">
+	<link rel="stylesheet" href="https://use.typekit.net/iih5khf.css">
+	<link rel="stylesheet" href="https://use.typekit.net/aaa3gkz.css">
+	<link rel="icon" type="image/png" href="apple-touch-icon.png" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-66519423-12"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-66519423-12');
+	</script>
+</head>
+
+<body>
+	<div class="blackBlock" id="blackBlock"><div class="loader" id="loader"><div class="lds-grid"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div></div>
+
+	<div class="homeCard">
+		<h1>404 NOT FOUND</h1>
+		<p>The page you're looking for does not exist. </p>
+	</div>
+
+	<div class="backgroundVideo">
+		<video id="grainVideo" oncontextmenu="return false;"apple-touch-icon.png preload="auto" autoplay muted loop playsinline>
+			<source src="https://jasonluo.me/vid/grain.mp4" type="video/mp4">
+		</video>
+	</div>
+
+	<div class="navPadding"></div>
+	
+	<div class="subNavBar noselect">
+		<a href="https://jasonluo.me"><div class="subNav"><p>HOME</p></div></a>
+		<a href="https://jasonluo.me/films"><div class="subNav"><p>FILMS</p></div></a>
+		<a href="https://jasonluo.me/newmedia/"><div class="subNav"><p>NEW MEDIA</p></div></a>
+		<a href="https://jasonluo.me/aboutme/"><div class="subNav"><p>ABOUT ME</p></div></a>
+	</div>
+
+	<script>
+		var blackBlock = document.getElementById("blackBlock");
+
+		function dimLoader() {
+			blackBlock.style.opacity='0';
+			setTimeout(hideLoader, 500);
+		}
+
+		function hideLoader() {
+			blackBlock.style.display='none';
+		}
+
+		window.onload = function() {
+			setTimeout(dimLoader, 100);
+		}
+	</script>
+</body>
+</html>
