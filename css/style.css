@@ -656,9 +656,15 @@ img {
 }
 
 .aboutmeBox {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
 	width: 90%;
 	max-width: 800px;
-	margin: 125px auto 0 auto;
+	margin-top: 125px;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
 }
 
 .aboutmeContent{
@@ -855,6 +861,6 @@ img {
 	}
 
 	.aboutmeBox {
-		margin: 45px auto 0 auto;
+		margin-top: 45px;
 	}
 }
