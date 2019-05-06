@@ -14,12 +14,12 @@ function hideLoader() {
 	blackBlock.style.display='none';
 }
 
-var indexcheck = function() {
-	if (grain.readyState === 4 && avatar.complete == true) {
+var indexCheck = function() {
+	if (grain.readyState === 4) {
 		dimLoader();
 	} else {
-		setTimeout(indexcheck, 100);
+		setTimeout(indexCheck, 100);
 	}
 }
 
-indexcheck();
+indexCheck();
