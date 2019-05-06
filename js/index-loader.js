@@ -16,7 +16,7 @@ function hideLoader() {
 
 var indexCheck = function() {
 	if (grain.readyState === 4) {
-		dimLoader();
+		setTimeout(dimLoader, 300);
 	} else {
 		setTimeout(indexCheck, 100);
 	}
