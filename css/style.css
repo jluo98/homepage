@@ -490,7 +490,7 @@ img {
 	background-size: 100%;
 	width: 35px;
 	height: 35px;
-	margin: 25px 25px 0 0;
+	margin: 25px 25px 25px 0;
 	z-index: 300;
 }
 
@@ -719,6 +719,14 @@ img {
 
 	.gridItem {
 		width: 90%;
+	}
+
+	.closeButton {
+		margin: 15px 15px 15px 0;
+	}
+
+	.detailedContent {
+		margin: 0 10% 175px 10%;
 	}
 
 	.detailedContent h1 {
