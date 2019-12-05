@@ -1,0 +1,105 @@
+{
+  "films":[{
+    "projects":["cldcs", "friends", "how", "i", "making", "pegasus", "postcard", "remembering"],
+    "cldcs":[{
+      "title":"CLDCS Official Video",
+      "keyword":"cldcs",
+      "text":"The official video for the Chinese Language, Drama & Cultural Society at Raffles Institution. <br><br>A film produced by the Raffles Film Society.",
+      "videoType":"standardVideo",
+      "vimeoID":"242921340"
+    }],
+    "friends":[{
+      "title":"Friends - Less Than Meets The Eye",
+      "text":"May and Phyo have been great friends, but the others don't seem to agree. <br><br>Awarded the 3rd place at Filmfeste, a Raffles Institution event.",
+      "videoType":"standardVideo",
+      "vimeoID":"242917469"
+    }],
+    "how":[{
+      "title":"How to Make a Film - Harry Trotter and the Kidney Stone",
+      "text":"A parody about how to make a film. <br><br>A film produced by the Raffles Film Society.",
+      "videoType":"wideVideo",
+      "vimeoID":"242918469"
+    }],
+    "i":[{
+      "title":"i",
+      "text":"Diane finally has a friend, but something is not right. <br><br>A thesis film produced by the Raffles Film Society.",
+      "videoType":"standardVideo",
+      "vimeoID":"240443207"
+    }],
+    "making":[{
+      "title":"The Making of The Journey of The Seaweed Princess",
+      "text":"A mockumentary about making a film. <br><br>A Core Studio project at the School of the Art Institute of Chicago. ",
+      "videoType":"wideVideo",
+      "vimeoID":"334782818"
+    }],
+    "pegasus":[{
+      "title":"Pegasus",
+      "text":"Was it real, or just a dream? <br><br>A class project at the School of the Art Institute of Chicago.",
+      "videoType":"wideVideo",
+      "vimeoID":"332102743"
+    }],
+    "postcard":[{
+      "title":"Postcard",
+      "text":"A 48-hour challenge short film. All production was completed within the 48-hour time frame. <br><br>Premiered at the Gene Siskel Film Center. <br>Awarded the 2nd place at the 48·24·12 Video Challenge of ArtBash, a School of the Art Institute of Chicago event. ",
+      "videoType":"wideVideo",
+      "vimeoID":"332103460"
+    }],
+    "remembering":[{
+      "title":"Remembering Our Days at Raffles",
+      "text":"A farewell video for the graduating batch at the Raffles Institution Farewell Assembly 2016. <br><br>A film produced by the Raffles Film Society. ",
+      "videoType":"standardVideo",
+      "vimeoID":"242919085"
+    }]
+  }],
+  "newmedia":[{
+    "projects":["blackmirror", "gift", "homepage", "mirrored", "ptb", "timemachine"],
+    "blackmirror":[{
+      "title":"Black Mirror Club",
+      "text":"A fan page for the popular TV series Black Mirror. ",
+      "img":"blackmirror-screenshot.jpg",
+      "linkText":"blackmirror.club",
+      "link":"https://blackmirror.club",
+      "sourceLink":"https://github.com/Steve-luo/blackmirrorclub"
+    }],
+    "gift":[{
+      "title":"GiftPerfect",
+      "text":"A website of a conceptual service in the future to help people pick the perfect gift for others using machine learning and big data. <br><br>A Research Studio project at the School of the Art Institute of Chicago. ",
+      "img":"gift-screenshot.jpg",
+      "linkText":"View Project",
+      "link":"https://giftperfect.biz",
+      "sourceLink":"https://github.com/Steve-luo/giftperfect"
+    }],
+    "homepage":[{
+      "title":"jasonluo.me",
+      "text":"A website dedicated to showcase my works in film and new media, coded from scratch. ",
+      "img":"homepage-screenshot.jpg",
+      "linkText":"jasonluo.me",
+      "link":"https://jasonluo.me",
+      "sourceLink":"https://github.com/Steve-luo/homepage"
+    }],
+    "mirrored":[{
+      "title":"Mirrored",
+      "text":"A simple text-based web game created using Twine. ",
+      "img":"mirrored-screenshot.jpg",
+      "linkText":"View Project",
+      "link":"https://project.jasonluo.me/mirrored",
+      "sourceLink":"https://github.com/Steve-luo/mirrored"
+    }],
+    "ptb":[{
+      "title":"Push That Brick",
+      "text":"A simple javascript web game created using p5.js. ",
+      "img":"ptb-screenshot.png",
+      "linkText":"View Project",
+      "link":"https://project.jasonluo.me/ptb",
+      "sourceLink":"https://github.com/Steve-luo/pushthatbrick"
+    }],
+    "timemachine":[{
+      "title":"Time Machine",
+      "text":"This is a project responding to this social media era where everyone is using the same platform for communication. People are always staring at their digital devices, looking at the same websites, the same apps, yet the content is tailored to each individual user. <br>This website synchronizes the screens across all devices visiting. But instead of targeted content, users are randomly assigned a video snippet of a childhood aniation show. The change happens at the same time for everyone. <br><br>A Core Studio project at the School of the Art Institute of Chicago. ",
+      "img":"timemachine-screenshot.jpg",
+      "linkText":"View Project",
+      "link":"https://project.jasonluo.me/timemachine",
+      "sourceLink":"https://github.com/Steve-luo/timemachine"
+    }]
+  }]
+}
