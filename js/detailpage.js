@@ -20,26 +20,24 @@ function resetWait() {
 }
 
 function getContent() {
-	var xmlhttp = new XMLHttpRequest();
-	xmlhttp.onreadystatechange = function() {
-		if (this.readyState == 4 && this.status == 200) {
-			var myObj = JSON.parse(this.responseText);
-			title.innerHTML = myObj.title;
-			text.innerHTML = myObj.text;
+	fetch("../data/projects.json", {method:'GET'})
+		.then((res) => res.json())
+		.then((json) => {
 			if (window.location.href.indexOf("/films") != -1) {
-				embeded.classList.add(myObj.videoType);
-				embededVideo.src = "https://player.vimeo.com/video/" + myObj.vimeoID;
+				title.innerHTML = json.films[0][item][0].title;
+				text.innerHTML = json.films[0][item][0].text;
+				embeded.classList.add(json.films[0][item][0].videoType);
+				embededVideo.src = "https://player.vimeo.com/video/" + json.films[0][item][0].vimeoID;
 			}
 			if (window.location.href.indexOf("/newmedia") != -1) {
-				image.src = "img/" + myObj.img;
-				linkText.innerHTML = myObj.linkText;
-				link.href = myObj.link;
-				sourceLink.href = myObj.sourceLink;
+				title.innerHTML = json.newmedia[0][item][0].title;
+				text.innerHTML = json.newmedia[0][item][0].text;
+				image.src = "img/" + json.newmedia[0][item][0].img;
+				linkText.innerHTML = json.newmedia[0][item][0].linkText;
+				link.href = json.newmedia[0][item][0].link;
+				sourceLink.href = json.newmedia[0][item][0].sourceLink;
 			}
-		}
-	}
-	xmlhttp.open("GET", "data/" + item + ".json", true);
-	xmlhttp.send();
+		})
 }
 
 function showItem(chosenShowItem) {
@@ -72,6 +70,7 @@ function dimmerToggle() {
 function closePage() {
 	if (waitBool == false) {
 		waitBool = true;
+		item = "",
 		page.style.top = '120vh';
 		removeUrlParam();
 		dimmerToggle();
@@ -134,8 +133,7 @@ function resetPage() {
 }
 
 function addUrlParam() {
-	var param = item.replace("-detail", "");
-	history.pushState(item, item, "?show=" + param);
+	history.pushState(item, item, "?show=" + item);
 }
 
 function removeUrlParam() {

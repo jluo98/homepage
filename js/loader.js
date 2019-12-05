@@ -2,15 +2,15 @@ var blackBlock = document.getElementById("blackBlock");
 var fileList;
 
 function getFileList() {
-	var xmlhttp = new XMLHttpRequest();
-	xmlhttp.onreadystatechange = function() {
-		if (this.readyState == 4 && this.status == 200) {
-			var myObj = JSON.parse(this.responseText);
-			fileList = myObj.files;
-		}
-	}
-	xmlhttp.open("GET", "data/filelist.json", true);
-	xmlhttp.send();
+	fetch("../data/projects.json", {method:'GET'})
+		.then((res) => res.json())
+		.then((json) => {
+			if (window.location.href.indexOf("/films") != -1) {
+				fileList = json.films[0].projects;
+			} else if (window.location.href.indexOf("/newmedia") != -1) {
+				fileList = json.newmedia[0].projects;
+			}
+		})
 }
 
 function getUrlVars() {
@@ -22,12 +22,11 @@ function getUrlVars() {
 }
 
 var param = getUrlVars()["show"];
-var query = param + "-detail";
 
 function getQuery() {
 	var url = window.location.href;
 	if (url.indexOf('?show=') != -1 && fileList.includes(param)) {
-		showItem(query);
+		showItem(param);
 	} else {
 		removeUrlParam();
 	}
