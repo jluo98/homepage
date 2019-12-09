@@ -33,80 +33,7 @@
 <body>
 	<div class="blackBlock" id="blackBlock"><div class="loader" id="loader"><div class="loaderIcon"></div></div></div>
 
-	<div class="gridLayout noselect">
-		<div class="gridItem">
-			<div class="gridContent" onclick="showItem('i')">
-				<div class="gridImg" style="background-image: url(img/i.jpg);"></div>
-				<div class="gridText">
-					<h3>i</h3>
-					<p>2017</p>
-				</div>
-			</div>
-		</div>
-		<div class="gridItem">
-			<div class="gridContent" onclick="showItem('pegasus')">
-				<div class="gridImg" style="background-image: url(img/pegasus.jpg);"></div>
-				<div class="gridText">
-					<h3>Pegasus</h3>
-					<p>2018</p>
-				</div>
-			</div>
-		</div>
-		<div class="gridItem">
-			<div class="gridContent" onclick="showItem('postcard')">
-				<div class="gridImg" style="background-image: url(img/postcard.jpg);"></div>
-				<div class="gridText">
-					<h3>Postcard</h3>
-					<p>2019</p>
-				</div>
-			</div>
-		</div>
-		<div class="gridItem">
-			<div class="gridContent" onclick="showItem('remembering')">
-				<div class="gridImg" style="background-image: url(img/remembering.jpg);"></div>
-				<div class="gridText">
-					<h3>Remembering Our Days at Raffles</h3>
-					<p>2017</p>
-				</div>
-			</div>
-		</div>
-		<div class="gridItem">
-			<div class="gridContent" onclick="showItem('cldcs')">
-				<div class="gridImg" style="background-image: url(img/cldcs.jpg);"></div>
-				<div class="gridText">
-					<h3>CLDCS Official Video</h3>
-					<p>2017</p>
-				</div>
-			</div>
-		</div>
-		<div class="gridItem">
-			<div class="gridContent" onclick="showItem('making')">
-				<div class="gridImg" style="background-image: url(img/making.jpg);"></div>
-				<div class="gridText">
-					<h3>The Making of The Journey of The Seaweed Princess</h3>
-					<p>2019</p>
-				</div>
-			</div>
-		</div>
-		<div class="gridItem">
-			<div class="gridContent" onclick="showItem('how')">
-				<div class="gridImg" style="background-image: url(img/how.jpg);"></div>
-				<div class="gridText">
-					<h3>How to Make a Film</h3>
-					<p>2016</p>
-				</div>
-			</div>
-		</div>
-		<div class="gridItem">
-			<div class="gridContent" onclick="showItem('friends')">
-				<div class="gridImg" style="background-image: url(img/friends.jpg);"></div>
-				<div class="gridText">
-					<h3>Friends - Less Than Meets The Eye</h3>
-					<p>2016</p>
-				</div>
-			</div>
-		</div>
-	</div>
+	<div class="gridLayout noselect" id="gridParent"></div>
 
 	<div class="dimmer" id="dimmer" onclick="closePage()"></div>
 	<div class="detailedPage" id="detailedPage">
@@ -136,7 +63,6 @@
 		<a href="../aboutme/"><div class="subNav"><p>ABOUT ME</p></div></a>
 	</div>
 
-	<script type="text/javascript" src="../js/detailpage.js"></script>
 	<script type="text/javascript" src="../js/loader.js"></script>
 </body>
 </html>

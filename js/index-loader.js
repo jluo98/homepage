@@ -22,4 +22,4 @@ let indexCheck = function() {
 	}
 }
 
-indexCheck();
+indexCheck()

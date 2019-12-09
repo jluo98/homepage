@@ -13,4 +13,4 @@ let check = function() {
 	}
 }
 
-check();
+check()
