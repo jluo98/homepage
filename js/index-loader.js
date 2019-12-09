@@ -1,24 +1,24 @@
-var loader = document.getElementById("loader");
-var blackBlock = document.getElementById("blackBlock");
-var grain = document.getElementById("grainVideo");
-var avatar = document.getElementById("avatar");
+let loader = document.getElementById("loader")
+let blackBlock = document.getElementById("blackBlock")
+let grain = document.getElementById("grainVideo")
+let avatar = document.getElementById("avatar")
 
 function dimLoader() {
-	loader.style.opacity='0';
-	blackBlock.style.opacity='0';
-	setTimeout(hideLoader, 500);
+	loader.style.opacity='0'
+	blackBlock.style.opacity='0'
+	setTimeout(hideLoader, 500)
 }
 
 function hideLoader() {
-	loader.style.display='none';
-	blackBlock.style.display='none';
+	loader.style.display='none'
+	blackBlock.style.display='none'
 }
 
-var indexCheck = function() {
+let indexCheck = function() {
 	if (grain.readyState === 4) {
-		setTimeout(dimLoader, 300);
+		setTimeout(dimLoader, 300)
 	} else {
-		setTimeout(indexCheck, 100);
+		setTimeout(indexCheck, 100)
 	}
 }
 

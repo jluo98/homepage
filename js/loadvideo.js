@@ -1,16 +1,15 @@
-var grain = document.getElementById("grainVideo");
-var snippets = document.getElementById("snippetsVideo");
+let snippets = document.getElementById("snippetsVideo")
 
 function switchVideo() {
-	grain.style.display='none';
-	snippets.style.display='block';
+	grain.style.display='none'
+	snippets.style.display='block'
 }
 
-var check = function() {
+let check = function() {
 	if (snippets.readyState === 4) {
-		switchVideo();
+		switchVideo()
 	} else {
-		setTimeout(check, 100);
+		setTimeout(check, 100)
 	}
 }
 
