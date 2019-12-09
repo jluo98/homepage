@@ -17,7 +17,7 @@ let fileList
 let item
 
 function getFileList() {
-	fetch("../data/projects.json", {method:'GET'})
+	fetch("../data/works.json", {method:'GET'})
 		.then((res) => res.json())
 		.then((json) => {
 			if (window.location.href.indexOf("/films") != -1) {
@@ -99,7 +99,7 @@ function resetWait() {
 }
 
 function getContent() {
-	fetch("../data/projects.json", {method:'GET'})
+	fetch("../data/works.json", {method:'GET'})
 		.then((res) => res.json())
 		.then((json) => {
 			if (window.location.href.indexOf("/films") != -1) {
