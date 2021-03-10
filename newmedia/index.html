@@ -58,8 +58,8 @@
         <p v-html="selectedItem.text"></p>
         <img id="contentImage" :src="'img/' + selectedItem.img">
         <div class="linkBox noselect">
-          <a id="detailLink" :href="selectedItem.link" target="_blank"><div class="linkCube"><p>{{ selectedItem.linkText }}</p><div class="newtabIcon"></div></div></a>
-          <a id="sourceLink" :href="selectedItem.sourceLink" target="_blank"><div class="linkCube"><div class="githubIcon"></div><p>Source</p><div class="newtabIcon"></div></div></a>
+          <a :href="selectedItem.link" target="_blank"><div class="linkCube"><p>{{ selectedItem.linkText }}</p><div class="newtabIcon"></div></div></a>
+          <a :href="selectedItem.sourceLink" target="_blank"><div class="linkCube"><div class="githubIcon"></div><p>Source</p><div class="newtabIcon"></div></div></a>
         </div>
       </div>
     </div>
