@@ -1,6 +1,7 @@
 {
   "films": [
     {
+      "keyword": "i",
       "title": "i",
       "subline":"2017",
       "cover": "i.jpg",
@@ -9,6 +10,7 @@
       "vimeoID": "240443207"
     },
     {
+      "keyword": "pegasus",
       "title": "Pegasus",
       "subline":"2018",
       "cover": "pegasus.jpg",
@@ -17,6 +19,7 @@
       "vimeoID": "332102743"
     },
     {
+      "keyword": "postcard",
       "title": "Postcard",
       "subline":"2019",
       "cover": "postcard.jpg",
@@ -25,6 +28,7 @@
       "vimeoID": "332103460"
     },
     {
+      "keyword": "toxicity",
       "title": "Toxicity",
       "subline":"2019",
       "cover": "toxicity.jpg",
@@ -33,6 +37,7 @@
       "vimeoID": "378190213"
     },
     {
+      "keyword": "remembering",
       "title": "Remembering Our Days at Raffles",
       "subline":"2017",
       "cover": "remembering.jpg",
@@ -41,6 +46,7 @@
       "vimeoID": "242919085"
     },
     {
+      "keyword": "cldcs",
       "title": "CLDCS Official Video",
       "subline":"2017",
       "cover": "cldcs.jpg",
@@ -49,6 +55,7 @@
       "vimeoID": "242921340"
     },
     {
+      "keyword": "making",
       "title": "The Making of The Journey of The Seaweed Princess",
       "subline":"2019",
       "cover": "making.jpg",
@@ -57,6 +64,7 @@
       "vimeoID": "334782818"
     },
     {
+      "keyword": "how",
       "title": "How to Make a Film - Harry Trotter and the Kidney Stone",
       "subline":"2016",
       "cover": "how.jpg",
@@ -65,6 +73,7 @@
       "vimeoID": "242918469"
     },
     {
+      "keyword": "friends",
       "title": "Friends - Less Than Meets The Eye",
       "subline":"2016",
       "cover": "friends.jpg",
@@ -75,6 +84,7 @@
   ],
   "newmedia": [
     {
+      "keyword": "homepage",
       "title": "jasonluo.me",
       "subline":"A Website for Myself",
       "cover": "homepage.jpg",
@@ -86,6 +96,7 @@
     },
 
     {
+      "keyword": "timemachine",
       "title": "Time Machine",
       "subline":"A Portal to the Past",
       "cover": "timemachine.jpg",
@@ -96,6 +107,7 @@
       "sourceLink": "https://github.com/Steve-luo/timemachine"
     },
     {
+      "keyword": "blackmirror",
       "title": "Black Mirror Club",
       "subline":"A Fan Page Project",
       "cover": "blackmirror.jpg",
@@ -106,6 +118,7 @@
       "sourceLink": "https://github.com/Steve-luo/blackmirrorclub"
     },
     {
+      "keyword": "ptb",
       "title": "Push That Brick",
       "subline":"A p5.js Web Game",
       "cover": "ptb.jpg",
@@ -116,6 +129,7 @@
       "sourceLink": "https://github.com/Steve-luo/pushthatbrick"
     },
     {
+      "keyword": "mirrored",
       "title": "Mirrored",
       "subline":"A Text-based Game",
       "cover": "mirrored.jpg",
@@ -126,6 +140,7 @@
       "sourceLink": "https://github.com/Steve-luo/mirrored"
     },
     {
+      "keyword": "gift",
       "title": "GiftPerfect",
       "subline":"A Concept of A Future Service",
       "cover": "gift.jpg",
