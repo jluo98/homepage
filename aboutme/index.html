@@ -1,75 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>About Me - Jason Luo</title>
-	
-	<meta charset="utf-8"/>
-	<meta name="author" content="Jason Luo">
-	<meta name="description" content="Filmmaker · Cinematographer · New Media Artist">
-	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+  <title>About Me - Jason Luo</title>
+  
+  <meta charset="utf-8"/>
+  <meta name="author" content="Jason Luo">
+  <meta name="description" content="Filmmaker · Cinematographer · New Media Artist">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
 
-	<meta property="og:title" content="About Me - Jason Luo"/>
-	<meta property="og:description" content="Filmmaker · Cinematographer · New Media Artist"/>
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://jasonluo.me/aboutme/"/>
-	<meta property="og:image" content="https://jasonluo.me/img/cover.jpg"/>
+  <meta property="og:title" content="About Me - Jason Luo"/>
+  <meta property="og:description" content="Filmmaker · Cinematographer · New Media Artist"/>
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jasonluo.me/aboutme/"/>
+  <meta property="og:image" content="https://jasonluo.me/img/cover.jpg"/>
 
-	<link rel="stylesheet" href="../css/style.css">
-	<link rel="stylesheet" href="https://use.typekit.net/iih5khf.css">
-	<link rel="stylesheet" href="https://use.typekit.net/aaa3gkz.css">
-	<link rel="icon" type="image/png" href="../favicon.png" />
-	<link rel="apple-touch-icon" href="../favicon.png">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://use.typekit.net/iih5khf.css">
+  <link rel="stylesheet" type="text/css" href="https://use.typekit.net/aaa3gkz.css">
+  <link rel="icon" type="image/png" href="../favicon.png" />
+  <link rel="apple-touch-icon" type="image/png" href="../favicon.png">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-66519423-12"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+  <script src="https://unpkg.com/vue@3.0.7/dist/vue.global.prod.js"></script>
 
-		gtag('config', 'UA-66519423-12');
-	</script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-66519423-12"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-66519423-12');
+  </script>
 </head>
 <body>
-	<div class="blackBlock" id="blackBlock"><div class="loader" id="loader"><div class="loaderIcon"></div></div></div>
+  <section id="contentApp">
 
-	<div class="aboutmeBox">
-		<div class="aboutmeContent">
-			<div class="aboutmeAvatar">
-				<img src="../img/avatar.png" id="avatar">
-			</div>
+    <div class="blackBlock" :style="{ display: loaderDisplay, opacity: loaderOpacity }"><div class="loader"><div class="loaderIcon"></div></div></div>
 
-<!-- 		<div class="contactBar">
-			<a href="https://vimeo.com/jasonluo" target="_blank"><div class="contact" id="vimeo"></div></a>
-			<a href="https://github.com/Steve-luo" target="_blank"><div class="contact" id="github"></div></a>
-			<a href="https://www.instagram.com/jasonluo1998" target="_blank"><div class="contact" id="instagram"></div></a>
-			<a href="https://www.linkedin.com/in/jason-sen-luo" target="_blank"><div class="contact" id="linkedin"></div></a>
-			<a href="mailto:&#106;&#108;&#64;&#106;&#97;&#115;&#111;&#110;&#108;&#117;&#111;&#46;&#109;&#101;" target="_blank"><div class="contact" id="email"></div></a>
-		</div> -->
+    <div class="aboutmeBox">
+      <div class="aboutmeContent">
+        <div class="aboutmeAvatar">
+          <img src="../img/avatar.png" id="avatar">
+        </div>
 
-			<p>Hi, my name is Jason Luo. I refer to myself as a filmmaker and New Media artist. For filmmaking, I focus more on cinematography and post-production (like editing and sound design). For New Media, I focus more on web coding and design. 
-				<br><br>
-				My journey as a filmmaker started when I was in middle school. Since then, I continued my exploration in the filmmaking world. I joined the <a href="https://jluo.cc/filmsociety" target="_blank">Raffles Film Society</a> at my high school <a href="https://jluo.cc/ri" target="_blank">Raffles Institution</a>. Now I'm studying Film/Video and New Media at the <a href="https://jluo.cc/saic" target="_blank">School of the Art Institute of Chicago</a>. 
-				<br><br>
-				My love for computers dates back even further. The very first time I touched a computer in the early 2000s, I was instantly amazed by this little magical box. From that day onwards, I never stopped digging in the world made up by hardware and software. 
-			</p>
-		</div>
-		<div class="navPadding"></div>
-	</div>
+  <!--    <div class="contactBar">
+        <a href="https://vimeo.com/jasonluo" target="_blank"><div class="contact" id="vimeo"></div></a>
+        <a href="https://github.com/Steve-luo" target="_blank"><div class="contact" id="github"></div></a>
+        <a href="https://www.instagram.com/jasonluo1998" target="_blank"><div class="contact" id="instagram"></div></a>
+        <a href="https://www.linkedin.com/in/jason-sen-luo" target="_blank"><div class="contact" id="linkedin"></div></a>
+        <a href="mailto:&#106;&#108;&#64;&#106;&#97;&#115;&#111;&#110;&#108;&#117;&#111;&#46;&#109;&#101;" target="_blank"><div class="contact" id="email"></div></a>
+      </div> -->
 
-	<div class="backgroundVideo">
-		<video id="grainVideo" oncontextmenu="return false;" preload="auto" autoplay muted loop playsinline>
-			<source src="../vid/grain.mp4" type="video/mp4">
-		</video>
-	</div>
+        <p>Hi, my name is Jason Luo. I refer to myself as a filmmaker and New Media artist. For filmmaking, I focus more on cinematography and post-production (like editing and sound design). For New Media, I focus more on web coding and design. 
+          <br><br>
+          My journey as a filmmaker started when I was in middle school. Since then, I continued my exploration in the filmmaking world. I joined the <a href="https://jluo.cc/filmsociety" target="_blank">Raffles Film Society</a> at my high school <a href="https://jluo.cc/ri" target="_blank">Raffles Institution</a>. Now I'm studying Film/Video and New Media at the <a href="https://jluo.cc/saic" target="_blank">School of the Art Institute of Chicago</a>. 
+          <br><br>
+          My love for computers dates back even further. The very first time I touched a computer in the early 2000s, I was instantly amazed by this little magical box. From that day onwards, I never stopped digging in the world made up by hardware and software. 
+        </p>
+      </div>
+      <div class="navPadding"></div>
+    </div>
 
-	<div class="subNavBar noselect">
-		<a href="../"><div class="subNav"><p>HOME</p></div></a>
-		<a href="../films/"><div class="subNav"><p>FILMS</p></div></a>
-		<a href="../newmedia/"><div class="subNav"><p>NEW MEDIA</p></div></a>
-		<div class="subNavActive"><p>ABOUT ME</p></div></a>
-	</div>
+    <div class="backgroundVideo">
+      <video id="grainVideo" oncontextmenu="return false;" preload="auto" autoplay muted loop playsinline>
+        <source src="../vid/grain.mp4" type="video/mp4">
+      </video>
+    </div>
 
-	<script type="text/javascript" src="../js/page-loader.js"></script>
+    <div class="subNavBar noselect">
+      <a href="../"><div class="subNav"><p>HOME</p></div></a>
+      <a href="../films/"><div class="subNav"><p>FILMS</p></div></a>
+      <a href="../newmedia/"><div class="subNav"><p>NEW MEDIA</p></div></a>
+      <div class="subNavActive"><p>ABOUT ME</p></div></a>
+    </div>
+
+  </section>
+
+  <script type="text/javascript" src="../js/loadData.js"></script>
 </body>
 </html>

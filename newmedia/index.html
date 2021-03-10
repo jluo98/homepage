@@ -1,70 +1,86 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>New Media - Jason Luo</title>
-	
-	<meta charset="utf-8"/>
-	<meta name="author" content="Jason Luo">
-	<meta name="description" content="Jason Luo's New Media Portfolio">
-	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+  <title>New Media - Jason Luo</title>
+  
+  <meta charset="utf-8"/>
+  <meta name="author" content="Jason Luo">
+  <meta name="description" content="Jason Luo's New Media Portfolio">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
 
-	<meta property="og:title" content="New Media - Jason Luo"/>
-	<meta property="og:description" content="Jason Luo's New Media Portfolio"/>
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://jasonluo.me/newmedia/"/>
-	<meta property="og:image" content="https://jasonluo.me/img/cover.jpg"/>
+  <meta property="og:title" content="New Media - Jason Luo"/>
+  <meta property="og:description" content="Jason Luo's New Media Portfolio"/>
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jasonluo.me/newmedia/"/>
+  <meta property="og:image" content="https://jasonluo.me/img/cover.jpg"/>
 
-	<link rel="stylesheet" href="../css/style.css">
-	<link rel="stylesheet" href="https://use.typekit.net/iih5khf.css">
-	<link rel="stylesheet" href="https://use.typekit.net/aaa3gkz.css">
-	<link rel="icon" type="image/png" href="../favicon.png" />
-	<link rel="apple-touch-icon" href="../favicon.png">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://use.typekit.net/iih5khf.css">
+  <link rel="stylesheet" type="text/css" href="https://use.typekit.net/aaa3gkz.css">
+  <link rel="icon" type="image/png" href="../favicon.png" />
+  <link rel="apple-touch-icon" type="image/png" href="../favicon.png">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-66519423-12"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+  <script src="https://unpkg.com/vue@3.0.7/dist/vue.global.prod.js"></script>
 
-		gtag('config', 'UA-66519423-12');
-	</script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-66519423-12"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-66519423-12');
+  </script>
 </head>
 <body>
-	<div class="blackBlock" id="blackBlock"><div class="loader" id="loader"><div class="loaderIcon"></div></div></div>
+  <section id="contentApp">
 
-	<div class="gridLayout noselect" id="gridParent"></div>
+    <div class="blackBlock" :style="{ display: loaderDisplay, opacity: loaderOpacity }"><div class="loader"><div class="loaderIcon"></div></div></div>
 
-	<div class="dimmer" id="dimmer" onclick="closePage()"></div>
-	<div class="detailedPage" id="detailedPage">
-		<div class="divGrayBlock" id="divBlackBlock"><div class="loader" id="divLoader"><div class="loaderIcon"></div></div></div>
-		<div class="closeButtonBox"><div class="closeButton" onclick="closePage()"></div></div>
-		<div class="detailedContent">
-			<h1 id="detailedContentTitle"></h1>
-			<p id="detailedContentText"></p>
-			<img id="detailedContentImage">
-			<div class="linkBox noselect">
-				<a id="detailLink" target="_blank"><div class="linkCube"><p id="detailLinkText"></p><div class="newtabIcon"></div></div></a>
-				<a id="sourceLink" target="_blank"><div class="linkCube"><div class="githubIcon"></div><p>Source</p><div class="newtabIcon"></div></div></a>
-			</div>
-		</div>
-	</div>
+    <div class="gridLayout noselect">
+      <div class="gridItem" v-for="item in content">
+        <div class="gridContent" @click="showPage(item)">
+          <div class="gridImg" :style="{ backgroundImage: 'url(img/' + item.cover + ')' }"></div>
+          <div class="gridText">
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.subline }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-	<div class="backgroundVideo">
-		<video id="grainVideo" oncontextmenu="return false;" preload="auto" autoplay muted loop playsinline>
-			<source src="../vid/grain.mp4" type="video/mp4">
-		</video>
-	</div>
+    <div class="dimmer" :style="{ visibility: dimmerVisibility, opacity: dimmerOpacity }" @click="hidePage()"></div>
+    <div class="detailedPage" :style="{ display: pageDisplay, top: pagePosition }">
+      <div class="divGrayBlock" :style="{ display: divLoaderDisplay, opacity: divLoaderOpacity }"><div class="loader"><div class="loaderIcon"></div></div></div>
+      <div class="closeButtonBox"><div class="closeButton" @click="hidePage()"></div></div>
+      <div class="detailedContent">
+        <h1>{{ selectedItem.title }}</h1>
+        <p v-html="selectedItem.text"></p>
+        <img id="contentImage" :src="'img/' + selectedItem.img">
+        <div class="linkBox noselect">
+          <a id="detailLink" :href="selectedItem.link" target="_blank"><div class="linkCube"><p>{{ selectedItem.linkText }}</p><div class="newtabIcon"></div></div></a>
+          <a id="sourceLink" :href="selectedItem.sourceLink" target="_blank"><div class="linkCube"><div class="githubIcon"></div><p>Source</p><div class="newtabIcon"></div></div></a>
+        </div>
+      </div>
+    </div>
 
-	<div class="navPadding"></div>
+    <div class="backgroundVideo">
+      <video id="grainVideo" oncontextmenu="return false;" preload="auto" autoplay muted loop playsinline>
+        <source src="../vid/grain.mp4" type="video/mp4">
+      </video>
+    </div>
 
-	<div class="subNavBar noselect">
-		<a href="../"><div class="subNav"><p>HOME</p></div></a>
-		<a href="../films/"><div class="subNav"><p>FILMS</p></div></a>
-		<div class="subNavActive"><p>NEW MEDIA</p></div>
-		<a href="../aboutme/"><div class="subNav"><p>ABOUT ME</p></div></a>
-	</div>
+    <div class="navPadding"></div>
 
-	<script type="text/javascript" src="../js/page-loader.js"></script>
+    <div class="subNavBar noselect">
+      <a href="../"><div class="subNav"><p>HOME</p></div></a>
+      <a href="../films/"><div class="subNav"><p>FILMS</p></div></a>
+      <div class="subNavActive"><p>NEW MEDIA</p></div>
+      <a href="../aboutme/"><div class="subNav"><p>ABOUT ME</p></div></a>
+    </div>
+
+  </section>
+
+  <script type="text/javascript" src="../js/loadData.js"></script>
 </body>
 </html>

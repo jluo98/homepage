@@ -1,67 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>403 Forbidden - Jason Luo</title>
-	
-	<meta charset="utf-8"/>
-	<meta name="author" content="Jason Luo">
-	<meta name="description" content="Filmmaker · Cinematographer · New Media Artist">
-	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+  <title>403 Forbidden - Jason Luo</title>
+  
+  <meta charset="utf-8"/>
+  <meta name="author" content="Jason Luo">
+  <meta name="description" content="Filmmaker · Cinematographer · New Media Artist">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
 
-	<link rel="stylesheet" href="https://jasonluo.me/css/style.css">
-	<link rel="stylesheet" href="https://use.typekit.net/iih5khf.css">
-	<link rel="stylesheet" href="https://use.typekit.net/aaa3gkz.css">
-	<link rel="icon" type="image/png" href="https://jasonluo.me/apple-touch-icon.png" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://use.typekit.net/iih5khf.css">
+  <link rel="stylesheet" type="text/css" href="https://use.typekit.net/aaa3gkz.css">
+  <link rel="icon" type="image/png" href="../favicon.png" />
+  <link rel="apple-touch-icon" type="image/png" href="../favicon.png">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-66519423-12"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+  <script src="https://unpkg.com/vue@3.0.7/dist/vue.global.prod.js"></script>
 
-		gtag('config', 'UA-66519423-12');
-	</script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-66519423-12"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-66519423-12');
+  </script>
 </head>
 
 <body>
-	<div class="blackBlock" id="blackBlock"><div class="loader" id="loader"><div class="loaderIcon"></div></div></div>
+  <section id="contentApp">
 
-	<div class="homeCard">
-		<h1>403 FORBIDDEN</h1>
-		<p>You don't have permission to access this page. </p>
-	</div>
+    <div class="blackBlock" :style="{ display: loaderDisplay, opacity: loaderOpacity }"><div class="loader"><div class="loaderIcon"></div></div></div>
 
-	<div class="backgroundVideo">
-		<video id="grainVideo" oncontextmenu="return false;"apple-touch-icon.png preload="auto" autoplay muted loop playsinline>
-			<source src="https://jasonluo.me/vid/grain.mp4" type="video/mp4">
-		</video>
-	</div>
+    <div class="homeCard">
+      <h1>403 FORBIDDEN</h1>
+      <p>You don't have permission to access this page. </p>
+    </div>
 
-	<div class="navPadding"></div>
-	
-	<div class="subNavBar noselect">
-		<a href="https://jasonluo.me"><div class="subNav"><p>HOME</p></div></a>
-		<a href="https://jasonluo.me/films"><div class="subNav"><p>FILMS</p></div></a>
-		<a href="https://jasonluo.me/newmedia/"><div class="subNav"><p>NEW MEDIA</p></div></a>
-		<a href="https://jasonluo.me/aboutme/"><div class="subNav"><p>ABOUT ME</p></div></a>
-	</div>
+    <div class="backgroundVideo">
+      <video id="grainVideo" oncontextmenu="return false;"apple-touch-icon.png preload="auto" autoplay muted loop playsinline>
+        <source src="https://jasonluo.me/vid/grain.mp4" type="video/mp4">
+      </video>
+    </div>
 
-	<script>
-		let blackBlock = document.getElementById("blackBlock");
+    <div class="navPadding"></div>
+    
+    <div class="subNavBar noselect">
+      <a href="https://jasonluo.me"><div class="subNav"><p>HOME</p></div></a>
+      <a href="https://jasonluo.me/films"><div class="subNav"><p>FILMS</p></div></a>
+      <a href="https://jasonluo.me/newmedia/"><div class="subNav"><p>NEW MEDIA</p></div></a>
+      <a href="https://jasonluo.me/aboutme/"><div class="subNav"><p>ABOUT ME</p></div></a>
+    </div>
 
-		function dimLoader() {
-			blackBlock.style.opacity='0';
-			setTimeout(hideLoader, 500);
-		}
+  </section>
 
-		function hideLoader() {
-			blackBlock.style.display='none';
-		}
-
-		window.onload = function() {
-			setTimeout(dimLoader, 100);
-		}
-	</script>
+  <script type="text/javascript" src="../js/loadData.js"></script>
 </body>
 </html>

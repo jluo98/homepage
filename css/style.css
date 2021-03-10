@@ -1,134 +1,138 @@
+:root {
+  --animate-duration: 500ms;
+}
+
 body {
-	font-family: myriad-pro, sans-serif;
-	font-weight: 400;
-	margin: 0;
-	color: #FFF;
-	background-color: #000;
-	background-repeat: no-repeat;
-	background-attachment:fixed;
-	background-position: center;
-	-webkit-background-size: cover;
-	   -moz-background-size: cover;
-	     -o-background-size: cover;
-	        background-size: cover;
+  font-family: myriad-pro, sans-serif;
+  font-weight: 400;
+  margin: 0;
+  color: #FFF;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-position: center;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
 }
 
 h1 {
-	font-family: proxima-nova, sans-serif;
-	font-weight: 700;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 700;
 }
 
 hr {
-	display: block;
-	margin-top: 0;
-	margin-bottom: 0;
-	margin-left: auto;
-	margin-right: auto;
-	border-style: inset;
-	border-width: 1px;
-	border-color: rgba(255, 255, 255, 0.15);
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  border-color: rgba(255, 255, 255, 0.15);
 }
 
 a {
-	text-decoration: none;
-	overflow: hidden;
+  text-decoration: none;
+  overflow: hidden;
 }
 
 img {
-	-webkit-user-drag: none;
-	 -khtml-user-drag: none;
-	   -moz-user-drag: none;
-	     -o-user-drag: none;
-	        user-drag: none;
+  -webkit-user-drag: none;
+   -khtml-user-drag: none;
+     -moz-user-drag: none;
+       -o-user-drag: none;
+          user-drag: none;
 }
 
 ::-webkit-scrollbar {
-	width: 14px;
+  width: 14px;
 }
  
 ::-webkit-scrollbar-track {
-	background-color: #111;
+  background-color: #111;
 }
  
 ::-webkit-scrollbar-thumb {
-	background-color: #888;
-	outline: none;
-	transition: 0.2s background-color linear;
+  background-color: #888;
+  outline: none;
+  transition: 0.2s background-color linear;
 }
 
 .loader {
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	opacity: 1;
-	z-index: 2000;
-	transition: opacity 0.5s linear;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  z-index: 2000;
+  transition: opacity 0.5s linear;
 }
 
 .blackBlock {
-	position: fixed;
-	top: 0;
-	left: 0;
-	background-color: #000;
-	width: 100vw;
-	height: 100vh;
-	opacity: 1;
-	z-index: 1500;
-	transition: opacity 0.5s linear;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+  z-index: 1500;
+  transition: opacity 0.5s linear;
 }
 
 .divGrayBlock {
-	position: fixed;
-	top: 0;
-	left: 0;
-	background-color: #111;
-	width: 100%;
-	height: 200vh;
-	opacity: 1;
-	z-index: 1400;
-	transition: opacity 0.5s linear;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  z-index: 1400;
+  transition: opacity 0.5s linear;
 }
 
 .loaderIcon {
-	background-image: url(../icon/film.svg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100%;
-	width: 100px;
-	height: 100px;
-	animation: rotate 2s linear infinite;
+  background-image: url(../icon/film.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  width: 100px;
+  height: 100px;
+  animation: rotate 2s linear infinite;
 }
 
 @keyframes rotate{
-	from {
-		transform: rotate(0deg);
-	} to {
-		transform: rotate(360deg);
-	}
+  from {
+    transform: rotate(0deg);
+  } to {
+    transform: rotate(360deg);
+  }
 }
 
 .noselect {
-	-webkit-touch-callout: none;
-	  -webkit-user-select: none;
-	   -khtml-user-select: none;
-	     -moz-user-select: none;
-	      -ms-user-select: none;
-	          user-select: none;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 
 .backgroundVideo {
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	width: 100%;
-	height: 100%; 
-	overflow: hidden;
-	z-index: -1000;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: hidden;
+  z-index: -1000;
 }
 
 .backgroundVideo video {
-	position: absolute;
+  position: absolute;
     left: 50%; /* % of surrounding element */
     top: 50%;
     transform: translate(-50%, -50%); /* % of current element */
@@ -140,397 +144,390 @@ img {
 }
 
 #grainVideo {
-	display: block;
+  display: block;
 }
 
 #snippetsVideo {
-	display: none;
+  display: none;
 }
 
 .homeCard {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 90%;
-	max-width: 450px;
-	text-align: center;
-	overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 450px;
+  text-align: center;
+  overflow: hidden;
 }
 
 .namecard {
-	justify-content: center;
-	align-items: center;
-	font-size: 0;
-	margin: 15px auto;
-	padding: 25px;
-	background-color: #000;
+  justify-content: center;
+  align-items: center;
+  font-size: 0;
+  margin: 15px auto;
+  padding: 25px;
+  background-color: #000;
 }
 
 .indexAvatar {
-	display: inline-block;
-	vertical-align: middle;
-	width: 41%;
-	text-align: right;
-	margin: 0;
-	padding-right: 2%;
+  display: inline-block;
+  vertical-align: middle;
+  width: 41%;
+  text-align: right;
+  margin: 0;
+  padding-right: 2%;
 }
 
 .indexAvatar img {
-	width: 100%;
-	max-width: 135px;
-	border-radius: 50%;
+  width: 100%;
+  max-width: 135px;
+  border-radius: 50%;
 }
 
 .cardContent {
-	display: inline-block;
-	vertical-align: middle;
-	width: 55%;
-	padding-left: 2%;
+  display: inline-block;
+  vertical-align: middle;
+  width: 55%;
+  padding-left: 2%;
 }
 
 .namecard h1 {
-	text-align: left;
-	color: #FFF;
-	font-size: 20pt;
-	margin: 0;
-	padding-bottom: 0.2em;
+  text-align: left;
+  color: #FFF;
+  font-size: 20pt;
+  margin: 0;
+  padding-bottom: 0.2em;
 }
 
 .namecard p {
-	font-size: 12pt;
-	text-align: left;
-	color: #FFF;
-	line-height: 1.5em;
-	margin: 0;
-	padding: 0;
+  font-size: 12pt;
+  text-align: left;
+  color: #FFF;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
 }
 
 .homeNavBar {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	align-content: center;
-	flex-wrap: nowrap;
-	margin-top: 15px;
-	margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .homeNavBar a {
-	display: inline-block;
-	overflow: hidden;
-	height: 50px;
-	margin: 0;
-	width: 32%;
+  display: inline-block;
+  overflow: hidden;
+  height: 50px;
+  margin: 0;
+  width: 32%;
 }
 
 .homeNav {
-	height: 100%;
-	background-color: #000;
-	transition: background-color 0.2s linear;
+  height: 100%;
+  background-color: #000;
+  transition: background-color 0.2s linear;
 }
 
 .homeNav:hover {
-	background-color: #FFF;
+  background-color: #FFF;
 }
 
 .homeNav p {
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-	font-family: proxima-nova, sans-serif;
-	font-size: 14pt;
-	font-weight: 700;
-	color: #FFF;
-	text-align: center;
-	margin: 0;
-	transition: color 0.2s linear;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: proxima-nova, sans-serif;
+  font-size: 14pt;
+  font-weight: 700;
+  color: #FFF;
+  text-align: center;
+  margin: 0;
+  transition: color 0.2s linear;
 }
 
 .homeNav:hover p {
-	color: #000;
+  color: #000;
 }
 
 .contactBar {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	align-content: center;
-	flex-wrap: wrap;
-	margin-top: 15px;
-	margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .contactBar a {
-	display: inline-block;
-	overflow: hidden;
-	margin: 0;
-	width: 50px;
-	height: 50px;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0;
+  width: 50px;
+  height: 50px;
 }
 
 .contact {
-	background-color: #000;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 50%;
-	width: 100%;
-	height: 100%;
-	filter: invert(0);
-	transition: filter 0.2s linear;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  width: 100%;
+  height: 100%;
+  filter: invert(0);
+  transition: filter 0.2s linear;
 }
 
 .contact:hover {
-	filter: invert(1);
+  filter: invert(1);
 }
 
 #vimeo {
-	background-image: url(../icon/vimeo.svg), none;
+  background-image: url(../icon/vimeo.svg), none;
 }
 
 #github {
-	background-image: url(../icon/github.svg), none;
+  background-image: url(../icon/github.svg), none;
 }
 
 #instagram {
-	background-image: url(../icon/instagram.svg), none;
+  background-image: url(../icon/instagram.svg), none;
 }
 
 #linkedin {
-	background-image: url(../icon/linkedin.svg), none;
+  background-image: url(../icon/linkedin.svg), none;
 }
 
 #email {
-	background-image: url(../icon/email.svg), none;
+  background-image: url(../icon/email.svg), none;
 }
 
 .subNavBar {
-	display: flex;
-	position: fixed;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	padding-bottom: env(safe-area-inset-bottom);
-	background-color: black;
-	justify-content: space-between;
-	align-items: center;
-	align-content: center;
-	flex-wrap: nowrap;
-	z-index: 1000;
+  display: flex;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: env(safe-area-inset-bottom);
+  background-color: black;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  z-index: 1000;
 }
 
 .subNavBar a {
-	display: inline-block;
-	overflow: hidden;
-	margin: 0;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0;
 }
 
 .subNav {
-	width: calc(100vw/4);
-	height: 100%;
-	background-color: #000;
-	transition: background-color 0.2s linear;
+  width: calc(100vw/4);
+  height: 100%;
+  background-color: #000;
+  transition: background-color 0.2s linear;
 }
 
 .subNav:hover {
-	background-color: #FFF;
+  background-color: #FFF;
 }
 
 .subNav p {
-	font-family: proxima-nova, sans-serif;
-	font-size: 14pt;
-	font-weight: 700;
-	color: #FFF;
-	text-align: center;
-	padding: 15px 0;
-	margin: 0;
-	transition: color 0.2s linear;
+  font-family: proxima-nova, sans-serif;
+  font-size: 14pt;
+  font-weight: 700;
+  color: #FFF;
+  text-align: center;
+  padding: 15px 0;
+  margin: 0;
+  transition: color 0.2s linear;
 }
 
 .subNav:hover p {
-	color: #000;
+  color: #000;
 }
 
 .subNavActive {
-	background-color: #FFF;
-	width: calc(100vw/4);
+  background-color: #FFF;
+  width: calc(100vw/4);
 }
 
 .subNavActive p {
-	font-family: proxima-nova, sans-serif;
-	font-size: 14pt;
-	font-weight: 700;
-	color: #000;
-	text-align: center;
-	padding: 15px 0;
-	margin: 0;
+  font-family: proxima-nova, sans-serif;
+  font-size: 14pt;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+  padding: 15px 0;
+  margin: 0;
 }
 
 .navPadding {
-	width: 100%;
-	height: 50px;
+  width: 100%;
+  height: 50px;
 }
 
 .gridLayout {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	width: 95%;
-	max-width: 1200px;
-	margin: 45px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 95%;
+  max-width: 1200px;
+  margin: 45px auto;
 }
 
 .gridItem {
-	display: inline-block;
-	width: 46%;
-	margin: 0;
+  display: inline-block;
+  width: 46%;
+  margin: 0;
 }
 
 .gridContent {
-	background-color: #111;
-	padding: 4% 4% 5px 4%;
-	margin: 3% 0;
-	transition: background-color 0.2s linear;
+  background-color: #111;
+  padding: 4% 4% 5px 4%;
+  margin: 3% 0;
+  transition: background-color 0.2s linear;
 }
 
 .gridContent:hover {
-	background-color: #FFF;
-	cursor: pointer;
+  background-color: #FFF;
+  cursor: pointer;
 }
 
 .gridContent:hover h3 {
-	color: #000;
+  color: #000;
 }
 
 .gridContent:hover p {
-	color: #000;
+  color: #000;
 }
 
 .gridImg {
-	background-repeat: no-repeat;
-	background-position: center;
-	-webkit-background-size: cover;
-	   -moz-background-size: cover;
-	     -o-background-size: cover;
-	background-size: cover;
-	width: 100%;
-	height: 0;
-	margin: 0 auto;
-	padding-top: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 0;
+  margin: 0 auto;
+  padding-top: 50%;
 }
 
 .gridText h3 {
-	font-family: proxima-nova, sans-serif;
-	text-align: center;
-	font-size: 14pt;
-	color: #FFF;
-	margin-top: 1em;
-	margin-bottom: 0.5em;
-	transition: color 0.2s linear;
+  font-family: proxima-nova, sans-serif;
+  text-align: center;
+  font-size: 14pt;
+  color: #FFF;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  transition: color 0.2s linear;
 }
 
 .gridText p {
-	font-weight: 300;
-	text-align: center;
-	font-size: 12pt;
-	color: #FFF;
-	margin-top: 0.5em;
-	margin-bottom: 1em;
-	transition: color 0.2s linear;
+  font-weight: 300;
+  text-align: center;
+  font-size: 12pt;
+  color: #FFF;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  transition: color 0.2s linear;
 }
 
 .dimmer {
-	visibility: hidden;
-	position: fixed;
-	top: 0;
-	left: 0;
-	background-color: #000;
-	width: 100vw;
-	height: 100vh;
-	z-index: 1100;
-}
-
-#dimmer {
-	opacity: 0;
-	transition: opacity 0.5s linear;
-}
-
-#dimmer.fade {
-	opacity: 0.75;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1100;
+  transition: opacity 0.5s linear;
 }
 
 .detailedPage {
-	display: none;
-	position: fixed;
-	top: 120vh;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 90%;
-	height: 92vh;
-	max-width: 1000px;
-	background-color: #111;
-	overflow-y: auto;
-	-webkit-overflow-scrolling: touch;
-	z-index: 1200;
-	transition: top 0.5s ease-in-out;
+  display: none;
+  position: fixed;
+  top: 120vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 92vh;
+  max-width: 1000px;
+  background-color: #111;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  z-index: 1200;
+  transition: top 0.5s ease-in-out;
 }
 
 .closeButtonBox {
-	position: -webkit-sticky;
-	position: sticky;
-	top: 0;
-	text-align: right;
-	background-color: #111;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  text-align: right;
+  background-color: #111;
 }
 
 .closeButton {
-	display: inline-block;
-	background-image: url(../icon/cross.svg), none;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100%;
-	width: 35px;
-	height: 35px;
-	margin: 25px 25px 25px 0;
-	z-index: 300;
+  display: inline-block;
+  background-image: url(../icon/cross.svg), none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  width: 35px;
+  height: 35px;
+  margin: 25px 25px 25px 0;
+  z-index: 300;
 }
 
 .closeButton:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .detailedContent {
-	color: #FFF;
-	margin: 0 10% 75px 10%;
+  color: #FFF;
+  margin: 0 10% 75px 10%;
 }
 
 .detailedContent h1 {
-	font-size: 36pt;
+  font-size: 36pt;
 }
 
 .detailedContent p {
-	font-weight: 300;
-	font-size: 14pt;
+  font-weight: 300;
+  font-size: 14pt;
 }
 
 .detailedContent img {
-	width: 100%;
-	margin: 1em 0;
+  width: 100%;
+  margin: 1em 0;
 }
 
 .embededVideo {
-	position: relative;
-	margin: 3em 0;
-	overflow: hidden;
+  position: relative;
+  margin: 3em 0;
+  overflow: hidden;
 }
 
 .standardVideo {
-	padding-top: 56.25%;
+  padding-top: 56.25%;
 }
 
 .wideVideo {
-	padding-top: 42.55%;
+  padding-top: 42.55%;
 }
 
 .embededVideo iframe {
@@ -543,316 +540,316 @@ img {
 }
 
 .linkBox {
-	text-align: center;
-	margin: 1em 0;
+  text-align: center;
+  margin: 1em 0;
 }
 
 .linkCube a {
-	display: inline-block;
-	height: 45px;
+  display: inline-block;
+  height: 45px;
 }
 
 .linkCube {
-	display: inline-block;
-	background-color: #000;
-	padding: 0 15px;
-	margin: 0.2em 0.5em;
-	filter: invert(0);
-	transition: filter 0.2s linear;
+  display: inline-block;
+  background-color: #000;
+  padding: 0 15px;
+  margin: 0.2em 0.5em;
+  filter: invert(0);
+  transition: filter 0.2s linear;
 }
 
 .linkCube:hover {
-	filter: invert(1);
+  filter: invert(1);
 }
 
 .linkCube p {
-	display: inline-block;
-	font-family: proxima-nova, sans-serif;
-	font-size: 14pt;
-	font-weight: 700;
-	line-height: 45px;
-	text-align: center;
-	color: #FFF;
-	margin: 0;
-	transition: color 0.2s linear;
+  display: inline-block;
+  font-family: proxima-nova, sans-serif;
+  font-size: 14pt;
+  font-weight: 700;
+  line-height: 45px;
+  text-align: center;
+  color: #FFF;
+  margin: 0;
+  transition: color 0.2s linear;
 }
 
 .newtabIcon {
-	display: inline-block;
-	overflow: hidden;
-	margin: 0;
-	background-image: url(../icon/newtab.svg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100%;
-	width: 12px;
-	height: 12px;
-	margin-left: 5px;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0;
+  background-image: url(../icon/newtab.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  width: 12px;
+  height: 12px;
+  margin-left: 5px;
 }
 
 .githubIcon {
-	display: inline-block;
-	vertical-align: baseline;
-	transform: translateY(3px);
-	overflow: hidden;
-	margin: 0;
-	background-image: url(../icon/github.svg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 100%;
-	width: 20px;
-	height: 20px;
-	margin-right: 5px;
+  display: inline-block;
+  vertical-align: baseline;
+  transform: translateY(3px);
+  overflow: hidden;
+  margin: 0;
+  background-image: url(../icon/github.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
 }
 
 .aboutmeBox {
-	position: absolute;
-	top: 0;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 90%;
-	max-width: 800px;
-	margin-top: 125px;
-	overflow-y: auto;
-	-webkit-overflow-scrolling: touch;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 800px;
+  margin-top: 125px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .aboutmeContent{
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .aboutmeAvatar {
-	width: 100%;
-	max-width: 200px;
-	margin: 2em auto;
+  width: 100%;
+  max-width: 200px;
+  margin: 2em auto;
 }
 
 .aboutmeAvatar img {
-	width: 100%;
-	border-radius: 50%;
+  width: 100%;
+  border-radius: 50%;
 }
 
 .aboutmeContent p {
-	font-weight: 300;
-	font-size: 14pt;
+  font-weight: 300;
+  font-size: 14pt;
 }
 
 .aboutmeContent a {
-	font-weight: 400;
-	color: #FFF;
-	background-color: rgba(0, 0, 0, 0);
-	padding: 0 5px;
-	transition: color 0.2s linear, background-color 0.2s linear;
+  font-weight: 400;
+  color: #FFF;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0 5px;
+  transition: color 0.2s linear, background-color 0.2s linear;
 }
 
 .aboutmeContent a:hover {
-	color: #000;
-	background-color: rgba(255, 255, 255, 1);
+  color: #000;
+  background-color: rgba(255, 255, 255, 1);
 }
 
 @media only screen and (max-width: 720px) {
-	.gridText h3 {
-		font-size: 12pt;
-	}
+  .gridText h3 {
+    font-size: 12pt;
+  }
 
-	.gridText p {
-		font-size: 10pt;
-	}
+  .gridText p {
+    font-size: 10pt;
+  }
 }
 
 @media only screen and (max-width: 520px) {
-	::-webkit-scrollbar {
-		width: 10px;
-	}
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
 
-	.loaderIcon {
-		width: 75px;
-		height: 75px;
-	}
+  .loaderIcon {
+    width: 75px;
+    height: 75px;
+  }
 
-	.homeCard {
-		max-width: 288px;
-	}
+  .homeCard {
+    max-width: 288px;
+  }
 
-	.indexAvatar {
-		display: block;
-		width: 100%;
-		text-align: center;
-		margin: 0;
-		padding: 0;
-	}
+  .indexAvatar {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
 
-	.cardContent {
-		display: block;
-		vertical-align: middle;
-		width: 100%;
-		width: 100%;
-		padding: 0;
-	}
+  .cardContent {
+    display: block;
+    vertical-align: middle;
+    width: 100%;
+    width: 100%;
+    padding: 0;
+  }
 
-	.namecard h1 {
-		font-size: 18pt;
-		text-align: center;
-		margin: 0;
-		padding-top: 0.5em;
-	}
+  .namecard h1 {
+    font-size: 18pt;
+    text-align: center;
+    margin: 0;
+    padding-top: 0.5em;
+  }
 
-	.namecard p {
-		font-size: 10pt;
-		text-align: center;
-	}
+  .namecard p {
+    font-size: 10pt;
+    text-align: center;
+  }
 
-	.homeNav p {
-		font-size: 10pt;
-	}
+  .homeNav p {
+    font-size: 10pt;
+  }
 
-	.subNav p {
-		font-size: 10pt;
-	}
+  .subNav p {
+    font-size: 10pt;
+  }
 
-	.subNavActive p {
-		font-size: 10pt;
-	}
+  .subNavActive p {
+    font-size: 10pt;
+  }
 
-	.gridLayout {
-		justify-content: center;
-	}
+  .gridLayout {
+    justify-content: center;
+  }
 
-	.gridItem {
-		width: 90%;
-	}
+  .gridItem {
+    width: 90%;
+  }
 
-	.closeButton {
-		margin: 15px 15px 15px 0;
-	}
+  .closeButton {
+    margin: 15px 15px 15px 0;
+  }
 
-	.detailedContent {
-		margin: 0 10% 175px 10%;
-	}
+  .detailedContent {
+    margin: 0 10% 175px 10%;
+  }
 
-	.detailedContent h1 {
-		font-size: 28pt;
-	}
+  .detailedContent h1 {
+    font-size: 28pt;
+  }
 
-	.detailedContent p {
-		font-size: 12pt;
-	}
+  .detailedContent p {
+    font-size: 12pt;
+  }
 
-	.linkCube p {
-		font-size: 12pt;
-		line-height: 40px;
-	}
+  .linkCube p {
+    font-size: 12pt;
+    line-height: 40px;
+  }
 
-	.newtabIcon {
-		width: 10px;
-		height: 10px;
-	}
+  .newtabIcon {
+    width: 10px;
+    height: 10px;
+  }
 
-	.githubIcon {
-		transform: translateY(2px);
-		width: 16px;
-		height: 16px;
-	}
+  .githubIcon {
+    transform: translateY(2px);
+    width: 16px;
+    height: 16px;
+  }
 
-	.aboutmeContent p {
-		font-size: 12pt;
-	}
+  .aboutmeContent p {
+    font-size: 12pt;
+  }
 }
 
 @media only screen and (max-width: 360px) {
-	.loaderIcon {
-		width: 50px;
-		height: 50px;
-	}
+  .loaderIcon {
+    width: 50px;
+    height: 50px;
+  }
 
-	.linkCube p {
-		font-size: 10pt;
-		line-height: 35px;
-	}
+  .linkCube p {
+    font-size: 10pt;
+    line-height: 35px;
+  }
 
-	.newtabIcon {
-		width: 8px;
-		height: 8px;
-	}
+  .newtabIcon {
+    width: 8px;
+    height: 8px;
+  }
 
-	.githubIcon {
-		transform: translateY(2px);
-		width: 14px;
-		height: 14px;
-	}
+  .githubIcon {
+    transform: translateY(2px);
+    width: 14px;
+    height: 14px;
+  }
 
-	.aboutmeContent p {
-		font-size: 10pt;
-	}
+  .aboutmeContent p {
+    font-size: 10pt;
+  }
 }
 
 @media only screen and (max-width: 319px) {
-	.contactBar {
-		justify-content: center;
-	}
+  .contactBar {
+    justify-content: center;
+  }
 
-	.contactBar a {
-		margin: 0.2em 0.8em;
-	}
+  .contactBar a {
+    margin: 0.2em 0.8em;
+  }
 
-	.subNav p {
-		font-size: 8pt;
-	}
+  .subNav p {
+    font-size: 8pt;
+  }
 
-	.subNavActive p {
-		font-size: 8pt;
-	}
+  .subNavActive p {
+    font-size: 8pt;
+  }
 }
 
 @media only screen and (max-width: 252px) {
-	.homeNav {
-		height: 50px;
-	}
+  .homeNav {
+    height: 50px;
+  }
 
-	.homeNav p {
-		line-height: 25px;
-	}
+  .homeNav p {
+    line-height: 25px;
+  }
 
-	.subNav p {
-		font-size: 6pt;
-	}
+  .subNav p {
+    font-size: 6pt;
+  }
 
-	.subNavActive p {
-		font-size: 6pt;
-	}
+  .subNavActive p {
+    font-size: 6pt;
+  }
 }
 
 @media only screen and (max-height: 450px) {
-	.namecard {
-		margin-top: 5px;
-		margin-bottom: 5px;
-		padding: 10px;
-	}
+  .namecard {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+  }
 
-	.namecard h1 {
-		font-size: 18pt;
-	}
+  .namecard h1 {
+    font-size: 18pt;
+  }
 
-	.namecard p {
-		font-size: 10pt;
-	}
+  .namecard p {
+    font-size: 10pt;
+  }
 
-	.homeNavBar {
-		margin-top: 5px;
-		margin-bottom: 5px;
-	}
+  .homeNavBar {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
 
-	.homeNav p {
-		font-size: 12pt;
-	}
+  .homeNav p {
+    font-size: 12pt;
+  }
 
-	.contactBar {
-		margin-top: 5px;
-		margin-bottom: 5px;
-	}
+  .contactBar {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
 
-	.aboutmeBox {
-		margin-top: 45px;
-	}
+  .aboutmeBox {
+    margin-top: 45px;
+  }
 }
