@@ -84,9 +84,11 @@ const contentApp = {
     },
     addUrlParam(keyword, title) {
       history.pushState({ show: keyword }, title + ' - ' + document.title, "?show=" + keyword)
+      document.title = title + ' - ' + document.title
     },
-    removeUrlParam() {
+    removeUrlParam(title) {
       history.pushState(null, null, ".")
+      document.title = document.title.replace(title + ' - ', '')
     },
     showPage(item) {
       if (!this.waitBool) {
@@ -120,9 +122,9 @@ const contentApp = {
     hidePage() {
       if (!this.waitBool) {
         this.waitBool = true
-        this.removeUrlParam()
         this.dimmerOpacity = '0'
         this.pagePosition = '120vh'
+        setTimeout(() => this.removeUrlParam(this.selectedItem.title), 300)
         setTimeout(() => this.dimmerVisibility = 'hidden', 500)
         setTimeout(() => this.pageDisplay = 'block', 500)
         setTimeout(() => this.selectedItem = { vimeoID: '240443207', "img": "homepage-screenshot.jpg" }, 500)
