@@ -26,8 +26,10 @@ const contentApp = {
         .then(data => {
           if (window.location.href.indexOf("/films") != -1) {
             this.content = data.films
+            setTimeout(() => this.getQuery(), 100)
           } else if (window.location.href.indexOf("/newmedia") != -1) {
             this.content = data.newmedia
+            setTimeout(() => this.getQuery(), 100)
           }
         })
     },
@@ -61,10 +63,36 @@ const contentApp = {
     destroyPlayer() {
       new Vimeo.Player(document.querySelector('.embededVideo iframe')).destroy()
     },
+    getUrlVars() {
+      let vars = {}
+      let parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars[key] = value
+      })
+      return vars
+    },
+    getQuery() {
+      if (window.location.href.indexOf('?show=') != -1) {
+        for (var i = 0; i < this.content.length; i++) {
+          if (this.content[i].keyword === this.getUrlVars()["show"]) {
+            this.showPage(this.content[i])
+            break
+          }
+        }
+      } else {
+        this.removeUrlParam()
+      }
+    },
+    addUrlParam(keyword, title) {
+      history.pushState({ show: keyword }, title + ' - ' + document.title, "?show=" + keyword)
+    },
+    removeUrlParam() {
+      history.pushState(null, null, ".")
+    },
     showPage(item) {
       if (!this.waitBool) {
         this.waitBool = true
         this.selectedItem = item
+        this.addUrlParam(item.keyword, item.title)
         this.dimmerVisibility = 'visible'
         this.dimmerOpacity = '0.75'
         this.pageDisplay = 'block'
@@ -92,6 +120,7 @@ const contentApp = {
     hidePage() {
       if (!this.waitBool) {
         this.waitBool = true
+        this.removeUrlParam()
         this.dimmerOpacity = '0'
         this.pagePosition = '120vh'
         setTimeout(() => this.dimmerVisibility = 'hidden', 500)
