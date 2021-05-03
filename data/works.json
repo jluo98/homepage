@@ -129,6 +129,17 @@
       "sourceLink": "https://github.com/Steve-luo/pushthatbrick"
     },
     {
+      "keyword": "carbonzine",
+      "title": "Carbon Zine",
+      "subline":"A digital zine about carbon emission",
+      "cover": "carbonzine.jpg",
+      "text": "A digital zine about carbon emission and pretecting the environment. ",
+      "img": "carbonzine-screenshot.jpg",
+      "linkText": "View Project",
+      "link": "https://carbonzine.jasonluo.me/",
+      "sourceLink": "https://github.com/Steve-luo/carbon-zine"
+    },
+    {
       "keyword": "mirrored",
       "title": "Mirrored",
       "subline":"A Text-based Game",
