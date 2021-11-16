@@ -522,14 +522,6 @@ img {
   overflow: hidden;
 }
 
-.standardVideo {
-  padding-top: 56.25%;
-}
-
-.wideVideo {
-  padding-top: 42.55%;
-}
-
 .embededVideo iframe {
     position: absolute;
     top: 0;
