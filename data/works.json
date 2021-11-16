@@ -1,6 +1,14 @@
 {
   "films": [
     {
+      "keyword": "persona",
+      "title": "Persona",
+      "subline":"2021",
+      "cover": "persona.jpg",
+      "text": "In a city, eight strangers with different backgrounds, life, and experiences are all seen wearing a similar style of mask. Like many others, they all use masks to present a curated version of themselves, becoming accustomed to maintaining this reality of constant disguise. Afraid of their flaws and imperfections, they conceal themselves underneath a layer of idealism. As a result, they are the perfect representation of ordinary citizens in public, never allowing their secrets to seep through the cracks. Only in private do they show their insecurities, rage, jealousy, and other flaws. In a turn of events, they encounter a situation where they have to decide between revealing their deepest secrets for the sake of others. A choice is made after a conflicted battle within themselves. When they finally dropped their masks, they came to realize that they found their own salvation through this act of kindness.",
+      "vimeoID": "603769588"
+    },
+    {
       "keyword": "i",
       "title": "i",
       "subline":"2017",
