@@ -56,8 +56,8 @@
       <div class="closeButtonBox"><div class="closeButton" @click="hidePage()"></div></div>
       <div class="detailedContent">
         <h1>{{ selectedItem.title }}</h1>
-        <p v-html="selectedItem.text"></p>
         <div class="embededVideo" :style="{ paddingTop: videoPadding }"></div>
+        <p v-html="selectedItem.text"></p>
       </div>
     </div>
 

@@ -55,8 +55,8 @@
       <div class="closeButtonBox"><div class="closeButton" @click="hidePage()"></div></div>
       <div class="detailedContent">
         <h1>{{ selectedItem.title }}</h1>
-        <p v-html="selectedItem.text"></p>
         <img id="contentImage" :src="'img/' + selectedItem.img">
+        <p v-html="selectedItem.text"></p>
         <div class="linkBox noselect">
           <a :href="selectedItem.link" target="_blank"><div class="linkCube"><p>{{ selectedItem.linkText }}</p><div class="newtabIcon"></div></div></a>
           <a :href="selectedItem.sourceLink" target="_blank"><div class="linkCube"><div class="githubIcon"></div><p>Source</p><div class="newtabIcon"></div></div></a>
