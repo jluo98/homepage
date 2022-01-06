@@ -37,7 +37,7 @@
       "title": "Toxicity",
       "subline":"2019",
       "cover": "toxicity.jpg",
-      "text": "A drum cover of Toxicity by System of Downs. <br><br>Director & Performer: Hatem Shakkouf<br>Cinematographer & Editor: Jason Luo ",
+      "text": "A drum cover of Toxicity by System of Downs.",
       "vimeoID": "378190213"
     },
     {
@@ -148,17 +148,6 @@
       "linkText": "View Project",
       "link": "https://project.jasonluo.me/mirrored",
       "sourceLink": "https://github.com/Steve-luo/mirrored"
-    },
-    {
-      "keyword": "gift",
-      "title": "GiftPerfect",
-      "subline":"A Concept of A Future Service",
-      "cover": "gift.jpg",
-      "text": "A website of a conceptual service in the future to help people pick the perfect gift for others using machine learning and big data. <br><br>A Research Studio project at the School of the Art Institute of Chicago. ",
-      "img": "gift-screenshot.jpg",
-      "linkText": "View Project",
-      "link": "https://giftperfect.biz",
-      "sourceLink": "https://github.com/Steve-luo/giftperfect"
     }
   ]
 }
