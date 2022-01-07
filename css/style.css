@@ -504,7 +504,7 @@ img {
 
 .detailedContent h1 {
   font-size: 36pt;
-  margin-bottom: 6px;
+  margin-bottom: 0.25em;
 }
 
 .detailedContent p {
@@ -518,7 +518,7 @@ img {
 }
 
 .propertyLine {
-  margin-top: 6px;
+  margin-top: 0.25em;
 }
 
 .embededVideo {
