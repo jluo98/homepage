@@ -331,14 +331,14 @@ img {
 }
 
 .subNav {
-  width: calc((100vw - 50px) / 4);
+  width: calc((100vw - (100vw / 10)) / 4);
   height: 100%;
   background-color: #000;
   transition: background-color 0.2s linear;
 }
 
 .subNavLangSwitch {
-  width: 50px;
+  width: calc(100vw / 10);
 }
 
 .subNav:hover {
@@ -360,7 +360,7 @@ img {
 
 .subNavActive {
   background-color: #FFF;
-  width: calc((100vw - 50px) / 4);
+  width: calc((100vw - (100vw / 10)) / 4);
 }
 
 .subNavActive p {
