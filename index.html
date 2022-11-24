@@ -39,7 +39,8 @@
 
 <body>
   <section id="contentApp">
-    <!-- <div class="blackBlock" id="blackBlock"><div class="loader" id="loader"><div class="loaderIcon"></div></div></div> -->
+
+    <div class="blackBlock" :style="{ display: loaderDisplay, opacity: loaderOpacity }"><div class="loader"><div class="loaderIcon"></div></div></div>
 
     <div class="homeCard">
       <div class="namecard">
@@ -76,7 +77,7 @@
     </div>
   </section>
 
-  <!-- <script type="text/javascript" src="js/loadIndex.js"></script> -->
+  <script type="text/javascript" src="/js/loadData.js"></script>
   <script type="text/javascript" src="/js/i18n.js"></script>
 </body>
 </html>

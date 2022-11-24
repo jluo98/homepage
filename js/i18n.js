@@ -45,6 +45,13 @@ const i18n = VueI18n.createI18n({
           "403Text": "You don't have permission to access this page. ",
           "404Title": "404 NOT FOUND",
           "404Text": "The page you're looking for does not exist. "
+        },
+        about: {
+          firstParagraph: "Hi, my name is Jason Luo. I'm a filmmaker and New Media artist. For filmmaking, I focus more on cinematography and post-production (like editing and sound design). For New Media, I focus more on web coding and design. ",
+          secondParagraph: "My journey as a filmmaker started when I was in middle school. Since then, I continued my exploration in the filmmaking world. I joined the {filmsoc}. Now I've graduated from {saic} and been continuing my filmmaking journey. ",
+          thirdParagraph: "My love for computers dates back even further. The very first time I touched a computer in the early 2000s, I was instantly amazed by this little magical box. From that day onwards, I never stopped digging in the world made up by hardware and software. ",
+          filmsoc: "Raffles Film Society",
+          saic: "School of the Art Institute of Chicago"
         }
       },
       meta: {
@@ -58,8 +65,7 @@ const i18n = VueI18n.createI18n({
         },
         property: {
           author: "Jason Luo",
-          description: "Jason Luo's Portfolio",
-
+          description: "Jason Luo's Portfolio"
         }
       }
     },
@@ -74,13 +80,20 @@ const i18n = VueI18n.createI18n({
           home: "主页",
           films: "电影",
           newMedia: "新媒体",
-          aboutMe: "关于"
+          aboutMe: "关于我"
         },
         error: {
           "403Title": "403拒绝访问",
           "403Text": "你没有权限访问当前页面",
           "404Title": "404找不到页面",
           "404Text": "你想要访问的页面不存在"
+        },
+        about: {
+          firstParagraph: "你好，我是罗森，一名独立电影人和新媒体开发者。电影方面，我更多担任摄影指导、剪辑师以及混音师等职位。新媒体方面，我更偏向网站开发和设计。",
+          secondParagraph: "我的电影之旅始于初中，延续至今。我在高中时期加入了 {filmsoc}，而现在我已经从 {saic} 毕业，继续我的旅途。",
+          thirdParagraph: "我对电脑的喜爱萌发地更早。在 2000 年初我第一次接触电脑之后，我瞬间就被那个神奇的盒子吸引住了。从那天开始我就从未停下研究这个由硬件和软件组成的世界。",
+          filmsoc: "莱佛士电影协会",
+          saic: "芝加哥艺术学院"
         }
       },
       meta: {
@@ -88,14 +101,13 @@ const i18n = VueI18n.createI18n({
           home: "罗森作品集",
           films: "电影作品 - 罗森作品集",
           newMedia: "新媒体作品 - 罗森作品集",
-          aboutMe: "关于 - 罗森作品集",
+          aboutMe: "关于我 - 罗森作品集",
           "403": "403拒绝访问 - 罗森作品集",
           "404": "404找不到页面 - 罗森作品集"
         },
         property: {
           author: "罗森",
-          description: "罗森的作品集",
-          
+          description: "罗森的作品集"
         }
       }
     }
@@ -110,3 +122,5 @@ link.href = "/css/font-" + i18n.global.locale + ".css"
 link.type = "text/css"
 link.rel = "stylesheet"
 document.getElementsByTagName("head")[0].appendChild(link)
+
+document.documentElement.lang = i18n.global.locale

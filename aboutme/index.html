@@ -55,12 +55,16 @@
         <a href="mailto:&#106;&#108;&#64;&#106;&#97;&#115;&#111;&#110;&#108;&#117;&#111;&#46;&#109;&#101;" target="_blank"><div class="contact" id="email"></div></a>
       </div> -->
 
-        <p>Hi, my name is Jason Luo. I refer to myself as a filmmaker and New Media artist. For filmmaking, I focus more on cinematography and post-production (like editing and sound design). For New Media, I focus more on web coding and design. 
-          <br><br>
-          My journey as a filmmaker started when I was in middle school. Since then, I continued my exploration in the filmmaking world. I joined the <a href="https://jluo.cc/filmsociety" target="_blank">Raffles Film Society</a> at my high school <a href="https://jluo.cc/ri" target="_blank">Raffles Institution</a>. Now I'm studying Film/Video and New Media at the <a href="https://jluo.cc/saic" target="_blank">School of the Art Institute of Chicago</a>. 
-          <br><br>
-          My love for computers dates back even further. The very first time I touched a computer in the early 2000s, I was instantly amazed by this little magical box. From that day onwards, I never stopped digging in the world made up by hardware and software. 
-        </p>
+        <p>{{ $t('text.about.firstParagraph') }}</p>
+        <i18n-t keypath="text.about.secondParagraph" tag="p">
+          <template v-slot:filmsoc>
+            <a href="https://jluo.cc/filmsociety">{{ $t('text.about.filmsoc') }}</a>
+          </template>
+          <template v-slot:saic>
+            <a href="https://jluo.cc/saic">{{ $t('text.about.saic') }}</a>
+          </template>
+        </i18n-t>
+        <p>{{ $t('text.about.thirdParagraph') }}</p>
       </div>
       <div class="navPadding"></div>
     </div>

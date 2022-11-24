@@ -32,32 +32,32 @@
 }
 
 body {
-  font-family: harmonyos-sans-sc,sans-serif;
+  font-family: harmonyos-sans-sc,-apple-system,BlinkMacSystemFont,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 400;
 }
 
 h1 {
-  font-family: harmonyos-sans-sc,sans-serif;
+  font-family: harmonyos-sans-sc,-apple-system,BlinkMacSystemFont,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 700;
 }
 
 .homeNav p {
-  font-family: harmonyos-sans-sc,sans-serif;
+  font-family: harmonyos-sans-sc,-apple-system,BlinkMacSystemFont,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 700;
 }
 
 .subNav p {
-  font-family: harmonyos-sans-sc,sans-serif;
+  font-family: harmonyos-sans-sc,-apple-system,BlinkMacSystemFont,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 700;
 }
 
 .subNavActive p {
-  font-family: harmonyos-sans-sc,sans-serif;
+  font-family: harmonyos-sans-sc,-apple-system,BlinkMacSystemFont,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 700;
 }
 
 .gridText h3 {
-  font-family: harmonyos-sans-sc,sans-serif;
+  font-family: harmonyos-sans-sc,-apple-system,BlinkMacSystemFont,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .gridText p {
@@ -69,7 +69,7 @@ h1 {
 }
 
 .linkCube p {
-  font-family: harmonyos-sans-sc, sans-serif;
+  font-family: harmonyos-sans-sc, -apple-system,BlinkMacSystemFont,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 700;
 }
 
