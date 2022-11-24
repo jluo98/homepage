@@ -3,8 +3,6 @@
 }
 
 body {
-  font-family: myriad-pro, sans-serif;
-  font-weight: 400;
   margin: 0;
   color: #FFF;
   background-color: #000;
@@ -18,8 +16,6 @@ body {
 }
 
 h1 {
-  font-family: proxima-nova, sans-serif;
-  font-weight: 700;
 }
 
 hr {
@@ -225,7 +221,14 @@ img {
   overflow: hidden;
   height: 50px;
   margin: 0;
-  width: 32%;
+}
+
+.homeNavTextBtn {
+  width: 28%;
+}
+
+.homeNavLangBtn {
+  width: 12%;
 }
 
 .homeNav {
@@ -242,9 +245,7 @@ img {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  font-family: proxima-nova, sans-serif;
   font-size: 14pt;
-  font-weight: 700;
   color: #FFF;
   text-align: center;
   margin: 0;
@@ -330,10 +331,14 @@ img {
 }
 
 .subNav {
-  width: calc(100vw/4);
+  width: calc((100vw - 50px) / 4);
   height: 100%;
   background-color: #000;
   transition: background-color 0.2s linear;
+}
+
+.subNavLangSwitch {
+  width: 50px;
 }
 
 .subNav:hover {
@@ -341,9 +346,7 @@ img {
 }
 
 .subNav p {
-  font-family: proxima-nova, sans-serif;
   font-size: 14pt;
-  font-weight: 700;
   color: #FFF;
   text-align: center;
   padding: 15px 0;
@@ -357,13 +360,11 @@ img {
 
 .subNavActive {
   background-color: #FFF;
-  width: calc(100vw/4);
+  width: calc((100vw - 50px) / 4);
 }
 
 .subNavActive p {
-  font-family: proxima-nova, sans-serif;
   font-size: 14pt;
-  font-weight: 700;
   color: #000;
   text-align: center;
   padding: 15px 0;
@@ -425,7 +426,6 @@ img {
 }
 
 .gridText h3 {
-  font-family: proxima-nova, sans-serif;
   text-align: center;
   font-size: 14pt;
   color: #FFF;
@@ -435,7 +435,6 @@ img {
 }
 
 .gridText p {
-  font-weight: 300;
   text-align: center;
   font-size: 12pt;
   color: #FFF;
@@ -508,7 +507,6 @@ img {
 }
 
 .detailedContent p {
-  font-weight: 300;
   font-size: 14pt;
   line-height: 1.5em;
 }
@@ -562,9 +560,7 @@ img {
 
 .linkCube p {
   display: inline-block;
-  font-family: proxima-nova, sans-serif;
   font-size: 14pt;
-  font-weight: 700;
   line-height: 45px;
   text-align: center;
   color: #FFF;
@@ -629,13 +625,11 @@ img {
 }
 
 .aboutmeContent p {
-  font-weight: 300;
   font-size: 14pt;
   line-height: 1.5em;
 }
 
 .aboutmeContent a {
-  font-weight: 400;
   color: #FFF;
   background-color: rgba(0, 0, 0, 0);
   padding: 0 5px;

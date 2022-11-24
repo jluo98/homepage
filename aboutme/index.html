@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>About Me - Jason Luo</title>
+  <section id="headApp">
+  <title>{{ $t('meta.title.aboutMe') }}</title>
   
   <meta charset="utf-8"/>
-  <meta name="author" content="Jason Luo">
-  <meta name="description" content="Filmmaker · Cinematographer · New Media Artist">
+  <meta name="author" content="{{ $t('meta.property.author') }}">
+  <meta name="description" content="{{ $t('meta.property.description') }}">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
 
-  <meta property="og:title" content="About Me - Jason Luo"/>
-  <meta property="og:description" content="Filmmaker · Cinematographer · New Media Artist"/>
+  <meta property="og:title" content="{{ $t('meta.title.aboutMe') }}"/>
+  <meta property="og:description" content="{{ $t('meta.property.description') }}"/>
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://jasonluo.me/aboutme/"/>
   <meta property="og:image" content="https://jasonluo.me/img/cover.jpg"/>
+  </section>
 
-  <link rel="stylesheet" type="text/css" href="../css/style.css?ver=1642048554">
+  <link rel="stylesheet" type="text/css" href="/css/styles.css?ver=1669272700">
   <link rel="stylesheet" type="text/css" href="https://use.typekit.net/iih5khf.css">
   <link rel="stylesheet" type="text/css" href="https://use.typekit.net/aaa3gkz.css">
-  <link rel="icon" type="image/png" href="../favicon.png" />
-  <link rel="apple-touch-icon" type="image/png" href="../favicon.png">
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/favicon.png">
 
-  <script src="https://unpkg.com/vue@3.0.7/dist/vue.global.prod.js"></script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+  <script src="https://unpkg.com/vue-i18n@9/dist/vue-i18n.global.prod.js"></script>
+  <script src="https://unpkg.com/js-cookie/dist/js.cookie.min.js"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-66519423-12"></script>
@@ -68,14 +72,16 @@
     </div>
 
     <div class="subNavBar noselect">
-      <a href="../"><div class="subNav"><p>HOME</p></div></a>
-      <a href="../films/"><div class="subNav"><p>FILMS</p></div></a>
-      <a href="../newmedia/"><div class="subNav"><p>NEW MEDIA</p></div></a>
-      <div class="subNavActive"><p>ABOUT ME</p></div></a>
+      <a href="../"><div class="subNav"><p>{{ $t("text.global.home") }}</p></div></a>
+      <a href="../films/"><div class="subNav"><p>{{ $t("text.global.films") }}</p></div></a>
+      <a href="../newmedia/"><div class="subNav"><p>{{ $t("text.global.newMedia") }}</p></div></a>
+      <div class="subNavActive"><p>{{ $t("text.global.aboutMe") }}</p></div>
+      <a href="#" onclick="langSwitch();return false;"><div class="subNav subNavLangSwitch" id="langSwitch"></div></a>
     </div>
 
   </section>
 
-  <script type="text/javascript" src="../js/loadData.js"></script>
+  <script type="text/javascript" src="/js/loadData.js"></script>
+  <script type="text/javascript" src="/js/i18n.js"></script>
 </body>
 </html>

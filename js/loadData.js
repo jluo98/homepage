@@ -21,7 +21,13 @@ const contentApp = {
   },
   methods: {
     fetchData() {
-      fetch('../data/works.json')
+      let dataName
+      if (i18n.global.locale === 'en') {
+        dataName="works"
+      } else if (i18n.global.locale === 'zh') {
+        dataName="works-zh"
+      }
+      fetch(`../data/${dataName}.json`)
         .then(res => res.json())
         .then(data => {
           if (window.location.href.indexOf("/films") != -1) {
@@ -138,4 +144,4 @@ const contentApp = {
   }
 }
 
-Vue.createApp(contentApp).mount('#contentApp')
+const headApp = {}

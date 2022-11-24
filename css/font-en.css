@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "harmonyos-sans-sc-bold-4e2d_6587";
+  src:
+    url("/fonts/harmonyos-sans-sc-bold-4e2d_6587.woff2") format("woff2"),
+    url("/fonts/harmonyos-sans-sc-bold-4e2d_6587.woff") format("woff"),
+    url("/fonts/harmonyos-sans-sc-bold-4e2d_6587.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: myriad-pro, sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 700;
+}
+
+.homeNav p {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 700;
+}
+
+.subNav p {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 700;
+}
+
+.subNavActive p {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 700;
+}
+
+.gridText h3 {
+  font-family: proxima-nova, sans-serif;
+}
+
+.gridText p {
+  font-weight: 300;
+}
+
+.detailedContent p {
+  font-weight: 300;
+}
+
+.linkCube p {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 700;
+}
+
+.aboutmeContent p {
+  font-weight: 300;
+}
+
+.aboutmeContent a {
+  font-weight: 400;
+}

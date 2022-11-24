@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "harmonyos-sans-sc";
+  src:
+    url("/fonts/harmonyos-sans-sc-regular.woff2") format("woff2"),
+    url("/fonts/harmonyos-sans-sc-regular.woff") format("woff"),
+    url("/fonts/harmonyos-sans-sc-regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "harmonyos-sans-sc";
+  src:
+    url("/fonts/harmonyos-sans-sc-bold.woff2") format("woff2"),
+    url("/fonts/harmonyos-sans-sc-bold.woff") format("woff"),
+    url("/fonts/harmonyos-sans-sc-bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "harmonyos-sans-sc";
+  src:
+    url("/fonts/harmonyos-sans-sc-thin.woff2") format("woff2"),
+    url("/fonts/harmonyos-sans-sc-thin.woff") format("woff"),
+    url("/fonts/harmonyos-sans-sc-thin.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: harmonyos-sans-sc,sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: harmonyos-sans-sc,sans-serif;
+  font-weight: 700;
+}
+
+.homeNav p {
+  font-family: harmonyos-sans-sc,sans-serif;
+  font-weight: 700;
+}
+
+.subNav p {
+  font-family: harmonyos-sans-sc,sans-serif;
+  font-weight: 700;
+}
+
+.subNavActive p {
+  font-family: harmonyos-sans-sc,sans-serif;
+  font-weight: 700;
+}
+
+.gridText h3 {
+  font-family: harmonyos-sans-sc,sans-serif;
+}
+
+.gridText p {
+  font-weight: 300;
+}
+
+.detailedContent p {
+  font-weight: 300;
+}
+
+.linkCube p {
+  font-family: harmonyos-sans-sc, sans-serif;
+  font-weight: 700;
+}
+
+.aboutmeContent p {
+  font-weight: 300;
+}
+
+.aboutmeContent a {
+  font-weight: 400;
+}
