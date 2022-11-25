@@ -7,9 +7,9 @@ if (Cookies.get('locale') != "en" && Cookies.get('locale') != "zh") {
 }
 
 if (Cookies.get('locale') === "en") {
-  document.getElementById('langSwitch').innerHTML = "<p style='font-family: harmonyos-sans-sc-bold-4e2d_6587,sans-serif; font-weight: 700;'>中</p>"
+  document.getElementById('langSwitch').innerHTML = "<p style='font-family: harmonyos-sans-sc-bold-4e2d_6587,sans-serif; font-weight: 700;'>中文</p>"
 } else if (Cookies.get('locale') === "zh") {
-  document.getElementById('langSwitch').innerHTML = "<p>EN</p>"
+  document.getElementById('langSwitch').innerHTML = "<p>ENG</p>"
 }
 
 function langSwitch() {
@@ -124,3 +124,13 @@ link.rel = "stylesheet"
 document.getElementsByTagName("head")[0].appendChild(link)
 
 document.documentElement.lang = i18n.global.locale
+
+if (window.location.pathname.startsWith("films", 1)) {
+  document.title = i18n.global.t("meta.title.films")
+} else if (window.location.pathname.startsWith("newmedia", 1)) {
+  document.title = i18n.global.t("meta.title.newMedia")
+} else if (window.location.pathname.startsWith("aboutme", 1)) {
+  document.title = i18n.global.t("meta.title.aboutMe")
+} else if (window.location.pathname === "/") {
+  document.title = i18n.global.t("meta.title.home")
+}
