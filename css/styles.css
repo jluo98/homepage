@@ -256,6 +256,19 @@ img {
   color: #000;
 }
 
+.socialLink {
+  text-align: left;
+  padding-top: 16px;
+}
+
+.socialLink img {
+  height: 20px;
+}
+
+.socialLink a {
+  padding-right: 10px;
+}
+
 .subNavBar {
   display: flex;
   position: fixed;
@@ -610,6 +623,19 @@ img {
 
   .homeCard {
     max-width: 288px;
+  }
+
+  .socialLink {
+    text-align: center;
+    padding-top: 14px;
+  }
+
+  .socialLink img {
+    height: 16px;
+  }
+
+  .socialLink a {
+    padding-right: 8px;
   }
 
   .indexAvatar {
