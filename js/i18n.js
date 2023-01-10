@@ -115,7 +115,6 @@ const i18n = VueI18n.createI18n({
 })
 
 Vue.createApp(contentApp).use(i18n).mount('#contentApp')
-Vue.createApp(headApp).use(i18n).mount('#headApp')
 
 let link = document.createElement("link")
 link.href = "/css/font-" + i18n.global.locale + ".css"
@@ -125,8 +124,21 @@ document.getElementsByTagName("head")[0].appendChild(link)
 
 document.documentElement.lang = i18n.global.locale
 
+let localeParam = new Proxy(new URLSearchParams(window.location.search), {get: (searchParams, prop) => searchParams.get(prop)}).lang
+if (localeParam === "en" && i18n.global.locale === "zh") {
+  Cookies.set('locale', 'en', { expires: 365, path: '/' })
+  location.reload()
+} else if (localeParam === "zh" && i18n.global.locale === "en") {
+  Cookies.set('locale', 'zh', { expires: 365, path: '/' })
+  location.reload()
+}
+
 function populateFields(path) {
   document.title = i18n.global.t(`meta.title.${path}`)
+  document.querySelector('meta[name="author"]').setAttribute("content", i18n.global.t("meta.property.author"))
+  document.querySelector('meta[name="description"]').setAttribute("content", i18n.global.t("meta.property.description"))
+  document.querySelector('meta[property="og:title"]').setAttribute("content", i18n.global.t(`meta.title.${path}`))
+  document.querySelector('meta[property="og:description"]').setAttribute("content", i18n.global.t("meta.property.description"))
   if (path != "home") {
     document.getElementById('homeButton').innerHTML = i18n.global.t("text.global.home")
   } else {
