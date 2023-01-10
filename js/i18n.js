@@ -125,12 +125,25 @@ document.getElementsByTagName("head")[0].appendChild(link)
 
 document.documentElement.lang = i18n.global.locale
 
+function populateFields(path) {
+  document.title = i18n.global.t(`meta.title.${path}`)
+  if (path != "home") {
+    document.getElementById('homeButton').innerHTML = i18n.global.t("text.global.home")
+  } else {
+    document.getElementById('name').innerHTML = i18n.global.t("text.homepage.name")
+    document.getElementById('subline').innerHTML = i18n.global.t("text.homepage.titleLine1") + "<br>" + i18n.global.t("text.homepage.titleLine2")
+  }
+  document.getElementById('filmsButton').innerHTML = i18n.global.t("text.global.films")
+  document.getElementById('newMediaButton').innerHTML = i18n.global.t("text.global.newMedia")
+  document.getElementById('aboutMeButton').innerHTML = i18n.global.t("text.global.aboutMe")
+}
+
 if (window.location.pathname.startsWith("films", 1)) {
-  document.title = i18n.global.t("meta.title.films")
+  populateFields("films")
 } else if (window.location.pathname.startsWith("newmedia", 1)) {
-  document.title = i18n.global.t("meta.title.newMedia")
+  populateFields("newMedia")
 } else if (window.location.pathname.startsWith("aboutme", 1)) {
-  document.title = i18n.global.t("meta.title.aboutMe")
+  populateFields("aboutMe")
 } else if (window.location.pathname === "/") {
-  document.title = i18n.global.t("meta.title.home")
+  populateFields("home")
 }

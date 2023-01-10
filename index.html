@@ -48,8 +48,8 @@
           <img src="img/avatar.png" id="avatar">
         </div>
         <div class="cardContent">
-          <h1>{{ $t("text.homepage.name") }}</h1>
-          <p>{{ $t("text.homepage.titleLine1") }}<br>{{ $t("text.homepage.titleLine2") }}</p>
+          <h1 id="name">Jason Luo</h1>
+          <p id="subline">Filmmaker · Cinematographer<br>New Media Artist</p>
           <div class="socialLink">
             <a href="https://vimeo.com/jasonluo" target="_blank"><img src="/icon/vimeo.svg"></a>
             <a href="https://github.com/jluo98" target="_blank"><img src="/icon/github.svg"></a>
@@ -60,9 +60,9 @@
         </div>
       </div>
       <div class="homeNavBar noselect">
-        <a href="films/" class="homeNavTextBtn"><div class="homeNav"><p>{{ $t("text.global.films") }}</p></div></a>
-        <a href="newmedia/" class="homeNavTextBtn"><div class="homeNav"><p>{{ $t("text.global.newMedia") }}</p></div></a>
-        <a href="aboutme/" class="homeNavTextBtn"><div class="homeNav"><p>{{ $t("text.global.aboutMe") }}</p></div></a>
+        <a href="films/" class="homeNavTextBtn"><div class="homeNav"><p id="filmsButton">FILMS</p></div></a>
+        <a href="newmedia/" class="homeNavTextBtn"><div class="homeNav"><p id="newMediaButton">NEW MEDIA</p></div></a>
+        <a href="aboutme/" class="homeNavTextBtn"><div class="homeNav"><p id="aboutMeButton">ABOUT ME</p></div></a>
         <a href="#" onclick="langSwitch();return false;" class="homeNavLangBtn"><div class="homeNav" id="langSwitch"></div></a>
       </div>
     </div>
