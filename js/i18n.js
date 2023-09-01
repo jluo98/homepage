@@ -31,7 +31,7 @@ const i18n = VueI18n.createI18n({
       text: {
         homepage: {
           name: "Jason Luo",
-          titleLine1: "Filmmaker · Cinematographer",
+          titleLine1: "Editor · Cinematographer",
           titleLine2: "New Media Artist"
         },
         global: {
@@ -73,7 +73,7 @@ const i18n = VueI18n.createI18n({
       text: {
         homepage: {
           name: "罗森",
-          titleLine1: "电影人 · 摄影指导",
+          titleLine1: "剪辑师 · 摄影指导",
           titleLine2: "新媒体艺术"
         },
         global: {
